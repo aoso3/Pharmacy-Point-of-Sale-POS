@@ -1,0 +1,57 @@
+﻿Build started 10/24/2019 11:39:06 PM.
+     1>Project "H:\ITE Projects\2-Second Year\Programming 3 && Algorithm 1\Usama & Mouayyad & Nadir\programming 3\Pharmacy\PHRMA\PHRMA\PHRMA.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.5\SYSTEM.COMPONENTMODEL.COMPOSITION.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.5\SYSTEM.CORE.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.5\SYSTEM.DATA.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.5\SYSTEM.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.5\SYSTEM.DRAWING.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.5\SYSTEM.WINDOWS.FORMS.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.5\SYSTEM.XML.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\TELERIK\UI FOR WINFORMS Q2 2014\BIN40\TELERIK.WINCONTROLS.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\TELERIK\UI FOR WINFORMS Q2 2014\BIN40\TELERIK.WINCONTROLS.GRIDVIEW.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\TELERIK\UI FOR WINFORMS Q2 2014\BIN40\TELERIK.WINCONTROLS.RICHTEXTBOX.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\TELERIK\UI FOR WINFORMS Q2 2014\BIN40\TELERIK.WINCONTROLS.THEMES.AQUA.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\TELERIK\UI FOR WINFORMS Q2 2014\BIN40\TELERIK.WINCONTROLS.THEMES.BREEZE.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\TELERIK\UI FOR WINFORMS Q2 2014\BIN40\TELERIK.WINCONTROLS.THEMES.OFFICE2013LIGHT.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\TELERIK\UI FOR WINFORMS Q2 2014\BIN40\TELERIK.WINCONTROLS.THEMES.TELERIKMETROBLUE.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\TELERIK\UI FOR WINFORMS Q2 2014\BIN40\TELERIK.WINCONTROLS.THEMES.VISUALSTUDIO2012LIGHT.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\TELERIK\UI FOR WINFORMS Q2 2014\BIN40\TELERIK.WINCONTROLS.UI.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES\TELERIK\UI FOR WINFORMS Q2 2014\BIN40\TELERIKCOMMON.DLL" is missing.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.ComponentModel.Composition.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /FU"C:\Program Files (x86)\Telerik\UI for WinForms Q2 2014\Bin40\Telerik.WinControls.dll" /FU"C:\Program Files (x86)\Telerik\UI for WinForms Q2 2014\Bin40\Telerik.WinControls.GridView.dll" /FU"C:\Program Files (x86)\Telerik\UI for WinForms Q2 2014\Bin40\Telerik.WinControls.RichTextBox.dll" /FU"C:\Program Files (x86)\Telerik\UI for WinForms Q2 2014\Bin40\Telerik.WinControls.Themes.Aqua.dll" /FU"C:\Program Files (x86)\Telerik\UI for WinForms Q2 2014\Bin40\Telerik.WinControls.Themes.Breeze.dll" /FU"C:\Program Files (x86)\Telerik\UI for WinForms Q2 2014\Bin40\Telerik.WinControls.Themes.Office2013Light.dll" /FU"C:\Program Files (x86)\Telerik\UI for WinForms Q2 2014\Bin40\Telerik.WinControls.Themes.TelerikMetroBlue.dll" /FU"C:\Program Files (x86)\Telerik\UI for WinForms Q2 2014\Bin40\Telerik.WinControls.Themes.VisualStudio2012Light.dll" /FU"C:\Program Files (x86)\Telerik\UI for WinForms Q2 2014\Bin40\Telerik.WinControls.UI.dll" /FU"C:\Program Files (x86)\Telerik\UI for WinForms Q2 2014\Bin40\TelerikCommon.dll" /analyze- /errorReport:prompt /clr:nostdlib Add_Medicine1.cpp Add_Replacement2.cpp Date.cpp Main.cpp Medicine.cpp Pharamacy.cpp Replacement.cpp View.cpp View_2.cpp
+         Add_Medicine1.cpp
+     1>h:\ite projects\2-second year\programming 3 && algorithm 1\usama & mouayyad & nadir\programming 3\pharmacy\phrma\phrma\Add_Replacement2.h(674): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>h:\ite projects\2-second year\programming 3 && algorithm 1\usama & mouayyad & nadir\programming 3\pharmacy\phrma\phrma\Add_Medicine1.h(512): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+         Add_Replacement2.cpp
+     1>h:\ite projects\2-second year\programming 3 && algorithm 1\usama & mouayyad & nadir\programming 3\pharmacy\phrma\phrma\Add_Replacement2.h(674): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+         Date.cpp
+     1>Date.cpp(6): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\time.inl(112) : see declaration of 'localtime'
+         Main.cpp
+     1>h:\ite projects\2-second year\programming 3 && algorithm 1\usama & mouayyad & nadir\programming 3\pharmacy\phrma\phrma\Add_Replacement2.h(674): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>h:\ite projects\2-second year\programming 3 && algorithm 1\usama & mouayyad & nadir\programming 3\pharmacy\phrma\phrma\Add_Medicine1.h(512): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+         Medicine.cpp
+         Pharamacy.cpp
+         Replacement.cpp
+         View.cpp
+         View_2.cpp
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /analyze- /errorReport:prompt "C:\Users\Usama\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\ITE Projects\2-Second Year\Programming 3 && Algorithm 1\Usama & Mouayyad & Nadir\programming 3\Pharmacy\PHRMA\Debug\PHRMA.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\PHRMA.Add_Medicine1.resources /ASSEMBLYRESOURCE:Debug\PHRMA.Add_Replacement2.resources /ASSEMBLYRESOURCE:Debug\PHRMA.Main.resources /ASSEMBLYRESOURCE:Debug\PHRMA.View.resources /ASSEMBLYRESOURCE:Debug\PHRMA.View_2.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"H:\ITE Projects\2-Second Year\Programming 3 && Algorithm 1\Usama & Mouayyad & Nadir\programming 3\Pharmacy\PHRMA\Debug\PHRMA.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"Main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\Add_Medicine1.obj
+         Debug\Add_Replacement2.obj
+         Debug\Date.obj
+         Debug\Main.obj
+         Debug\Medicine.obj
+         Debug\Pharamacy.obj
+         Debug\Replacement.obj
+         Debug\View.obj
+         Debug\View_2.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         PHRMA.vcxproj -> H:\ITE Projects\2-Second Year\Programming 3 && Algorithm 1\Usama & Mouayyad & Nadir\programming 3\Pharmacy\PHRMA\Debug\PHRMA.exe
+     1>Done Building Project "H:\ITE Projects\2-Second Year\Programming 3 && Algorithm 1\Usama & Mouayyad & Nadir\programming 3\Pharmacy\PHRMA\PHRMA\PHRMA.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:38.43

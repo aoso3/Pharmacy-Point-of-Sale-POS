@@ -1,0 +1,2084 @@
+  Microsoft.Internal.Strings.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly System.ComponentModel.Composition, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Microsoft.Internal.Assumes: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    NotNull(T): PrivateScope, Assembly, Static, HideBySig
+    NotNull(T1, T2): PrivateScope, Assembly, Static, HideBySig
+    NotNull(T1, T2, T3): PrivateScope, Assembly, Static, HideBySig
+    NotNullOrEmpty(String): PrivateScope, Assembly, Static, HideBySig
+    IsTrue(Boolean): PrivateScope, Assembly, Static, HideBySig
+    IsTrue(Boolean, String): PrivateScope, Assembly, Static, HideBySig
+    NotReachable(): PrivateScope, Assembly, Static, HideBySig
+Class Microsoft.Internal.AttributeServices: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetAttributes(ICustomAttributeProvider): PrivateScope, Public, Static, HideBySig
+    GetAttributes(ICustomAttributeProvider, Boolean): PrivateScope, Public, Static, HideBySig
+    GetFirstAttribute(ICustomAttributeProvider): PrivateScope, Public, Static, HideBySig
+    GetFirstAttribute(ICustomAttributeProvider, Boolean): PrivateScope, Public, Static, HideBySig
+    IsAttributeDefined(ICustomAttributeProvider): PrivateScope, Public, Static, HideBySig
+    IsAttributeDefined(ICustomAttributeProvider, Boolean): PrivateScope, Public, Static, HideBySig
+Class Microsoft.Internal.Collections.CollectionServices: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    IsEnumerableOfT(Type): PrivateScope, Public, Static, HideBySig
+    GetEnumerableElementType(Type): PrivateScope, Public, Static, HideBySig
+    GetCollectionElementType(Type): PrivateScope, Public, Static, HideBySig
+    ToReadOnlyCollection(IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    ConcatAllowingNull(IEnumerable`1, IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    ConcatAllowingNull(ICollection`1, ICollection`1): PrivateScope, Public, Static, HideBySig
+    FastAppendToListAllowNulls(List`1, IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    FastAppendToListAllowNulls(List`1, T, IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    ForEach(IEnumerable`1, Action`1): PrivateScope, Public, Static, HideBySig
+    GetCardinality(IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    FastAny(IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    Copy(Stack`1): PrivateScope, Public, Static, HideBySig
+    AsArray(IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    AsList(IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    IsArrayEqual(T[], T[]): PrivateScope, Public, Static, HideBySig
+    IsCollectionEqual(IList`1, IList`1): PrivateScope, Public, Static, HideBySig
+    GetCollectionWrapper(Type, Object): PrivateScope, Public, Static, HideBySig
+Struct Microsoft.Internal.Collections.EnumerableCardinality: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.Internal.Collections.EnumerableCardinality Zero = 0 : Public, Static, Literal, HasDefault
+    Microsoft.Internal.Collections.EnumerableCardinality One = 1 : Public, Static, Literal, HasDefault
+    Microsoft.Internal.Collections.EnumerableCardinality TwoOrMore = 2 : Public, Static, Literal, HasDefault
+Class Microsoft.Internal.Collections.WeakReferenceCollection`1[T]: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  Type parameter: T,  ReferenceType
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Add(T): PrivateScope, Public, HideBySig
+    Remove(T): PrivateScope, Public, HideBySig
+    Contains(T): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    AliveItemsToList(): PrivateScope, Public, HideBySig
+Class Microsoft.Internal.ContractServices: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    TryCast(Type, Object, Object&(Out)): PrivateScope, Public, Static, HideBySig
+Class Microsoft.Internal.GenerationServices: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    CreateGeneratorForPublicConstructor(TypeBuilder, Type[]): PrivateScope, Public, Static, HideBySig
+    LoadValue(ILGenerator, Object): PrivateScope, Public, Static, HideBySig
+    AddItemToLocalDictionary(ILGenerator, LocalBuilder, Object, Object): PrivateScope, Public, Static, HideBySig
+    AddLocalToLocalDictionary(ILGenerator, LocalBuilder, Object, LocalBuilder): PrivateScope, Public, Static, HideBySig
+    GetExceptionDataAndStoreInLocal(ILGenerator, LocalBuilder, LocalBuilder): PrivateScope, Public, Static, HideBySig
+Class Microsoft.Internal.LazyServices: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetNotNullValue(Lazy`1, String): PrivateScope, Public, Static, HideBySig
+Class Microsoft.Internal.Lock: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    EnterReadLock(): PrivateScope, Public, HideBySig
+    EnterWriteLock(): PrivateScope, Public, HideBySig
+    ExitReadLock(): PrivateScope, Public, HideBySig
+    ExitWriteLock(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct Microsoft.Internal.ReadLock: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Microsoft.Internal.Lock): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct Microsoft.Internal.WriteLock: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Microsoft.Internal.Lock): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Internal.Requires: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    NotNull(T, String): PrivateScope, Public, Static, HideBySig
+    NotNullOrEmpty(String, String): PrivateScope, Public, Static, HideBySig
+    NotNullOrNullElements(IEnumerable`1, String): PrivateScope, Public, Static, HideBySig
+    NullOrNotNullElements(IEnumerable`1, String): PrivateScope, Public, Static, HideBySig
+    NullOrNotNullElements(IEnumerable`1, String): PrivateScope, Public, Static, HideBySig
+    NullOrNotNullElements(T[], String): PrivateScope, Public, Static, HideBySig
+    IsInMembertypeSet(MemberTypes, String, MemberTypes): PrivateScope, Public, Static, HideBySig
+Class Microsoft.Internal.Runtime.Serialization.SerializationServices: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetValue(SerializationInfo, String): PrivateScope, Public, Static, HideBySig
+Class Microsoft.Internal.StringComparers: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Properties:
+    System.StringComparer ContractName 'get ' : 
+    System.StringComparer MetadataKeyNames 'get ' : 
+  Methods:
+    get_ContractName(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MetadataKeyNames(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Microsoft.Internal.ReflectionServices: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Assembly(MemberInfo): PrivateScope, Public, Static, HideBySig
+    IsVisible(ConstructorInfo): PrivateScope, Public, Static, HideBySig
+    IsVisible(FieldInfo): PrivateScope, Public, Static, HideBySig
+    IsVisible(MethodInfo): PrivateScope, Public, Static, HideBySig
+    GetDisplayName(Type, String): PrivateScope, Public, Static, HideBySig
+    GetDisplayName(MemberInfo): PrivateScope, Public, Static, HideBySig
+    TryGetGenericInterfaceType(Type, Type, Type&(Out)): PrivateScope, Assembly, Static, HideBySig
+    GetAllProperties(Type): PrivateScope, Assembly, Static, HideBySig
+    GetAllMethods(Type): PrivateScope, Assembly, Static, HideBySig
+    GetAllFields(Type): PrivateScope, Public, Static, HideBySig
+    HasBaseclassOf(Type, Type): PrivateScope, Assembly, Static, HideBySig
+Class Microsoft.Internal.ReflectionInvoke: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    SafeCreateInstance(Type, Object[]): PrivateScope, Public, Static, HideBySig
+    SafeInvoke(ConstructorInfo, Object[]): PrivateScope, Public, Static, HideBySig
+    SafeInvoke(MethodInfo, Object, Object[]): PrivateScope, Public, Static, HideBySig
+    SafeGetValue(FieldInfo, Object): PrivateScope, Public, Static, HideBySig
+    SafeSetValue(FieldInfo, Object, Object): PrivateScope, Public, Static, HideBySig
+    DemandMemberAccessIfNeeded(MethodInfo): PrivateScope, Public, Static, HideBySig
+    DemandMemberAccessIfNeeded(Type): PrivateScope, Public, Static, HideBySig
+Class Microsoft.Internal.Strings: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Resources.ResourceManager ResourceManager 'get ' : 
+    System.Globalization.CultureInfo Culture 'get set' : 
+    System.String Argument_AssemblyReflectionOnly 'get ' : 
+    System.String Argument_ElementReflectionOnlyType 'get ' : 
+    System.String Argument_ExportsEmpty 'get ' : 
+    System.String Argument_ExportsTooMany 'get ' : 
+    System.String Argument_NullElement 'get ' : 
+    System.String Argument_ReflectionContextReturnsReflectionOnlyType 'get ' : 
+    System.String ArgumentException_EmptyString 'get ' : 
+    System.String ArgumentOutOfRange_InvalidEnum 'get ' : 
+    System.String ArgumentOutOfRange_InvalidEnumInSet 'get ' : 
+    System.String ArgumentValueType 'get ' : 
+    System.String AssemblyFileNotFoundOrWrongType 'get ' : 
+    System.String AtomicComposition_AlreadyCompleted 'get ' : 
+    System.String AtomicComposition_AlreadyNested 'get ' : 
+    System.String AtomicComposition_PartOfAnotherAtomicComposition 'get ' : 
+    System.String CardinalityMismatch_NoExports 'get ' : 
+    System.String CardinalityMismatch_TooManyExports 'get ' : 
+    System.String CatalogMutation_Invalid 'get ' : 
+    System.String CompositionElement_UnknownOrigin 'get ' : 
+    System.String CompositionException_ChangesRejected 'get ' : 
+    System.String CompositionException_ElementPrefix 'get ' : 
+    System.String CompositionException_ErrorPrefix 'get ' : 
+    System.String CompositionException_MetadataViewInvalidConstructor 'get ' : 
+    System.String CompositionException_MultipleErrorsWithMultiplePaths 'get ' : 
+    System.String CompositionException_OriginFormat 'get ' : 
+    System.String CompositionException_OriginSeparator 'get ' : 
+    System.String CompositionException_PathsCountSeparator 'get ' : 
+    System.String CompositionException_ReviewErrorProperty 'get ' : 
+    System.String CompositionException_SingleErrorWithMultiplePaths 'get ' : 
+    System.String CompositionException_SingleErrorWithSinglePath 'get ' : 
+    System.String CompositionTrace_Discovery_AssemblyLoadFailed 'get ' : 
+    System.String CompositionTrace_Discovery_DefinitionContainsNoExports 'get ' : 
+    System.String CompositionTrace_Discovery_DefinitionMarkedWithPartNotDiscoverableAttribute 'get ' : 
+    System.String CompositionTrace_Discovery_DefinitionMismatchedExportArity 'get ' : 
+    System.String CompositionTrace_Discovery_MemberMarkedWithMultipleImportAndImportMany 'get ' : 
+    System.String CompositionTrace_Rejection_DefinitionRejected 'get ' : 
+    System.String CompositionTrace_Rejection_DefinitionResurrected 'get ' : 
+    System.String ContractMismatch_ExportedValueCannotBeCastToT 'get ' : 
+    System.String ContractMismatch_InvalidCastOnMetadataField 'get ' : 
+    System.String ContractMismatch_MetadataViewImplementationCanNotBeNull 'get ' : 
+    System.String ContractMismatch_MetadataViewImplementationDoesNotImplementViewInterface 'get ' : 
+    System.String ContractMismatch_NullReferenceOnMetadataField 'get ' : 
+    System.String DirectoryNotFound 'get ' : 
+    System.String Discovery_DuplicateMetadataNameValues 'get ' : 
+    System.String Discovery_MetadataContainsValueWithInvalidType 'get ' : 
+    System.String Discovery_ReservedMetadataNameUsed 'get ' : 
+    System.String ExportDefinitionNotOnThisComposablePart 'get ' : 
+    System.String ExportFactory_TooManyGenericParameters 'get ' : 
+    System.String ExportNotValidOnIndexers 'get ' : 
+    System.String ImportDefinitionNotOnThisComposablePart 'get ' : 
+    System.String ImportEngine_ComposeTookTooManyIterations 'get ' : 
+    System.String ImportEngine_InvalidStateForRecomposition 'get ' : 
+    System.String ImportEngine_PartCannotActivate 'get ' : 
+    System.String ImportEngine_PartCannotGetExportedValue 'get ' : 
+    System.String ImportEngine_PartCannotSetImport 'get ' : 
+    System.String ImportEngine_PartCycle 'get ' : 
+    System.String ImportEngine_PreventedByExistingImport 'get ' : 
+    System.String ImportNotSetOnPart 'get ' : 
+    System.String ImportNotValidOnIndexers 'get ' : 
+    System.String InternalExceptionMessage 'get ' : 
+    System.String InvalidArgument_ReflectionContext 'get ' : 
+    System.String InvalidMetadataValue 'get ' : 
+    System.String InvalidMetadataView 'get ' : 
+    System.String InvalidOperation_DefinitionCannotBeRecomposed 'get ' : 
+    System.String InvalidOperation_GetExportedValueBeforePrereqImportSet 'get ' : 
+    System.String InvalidOperationReentrantCompose 'get ' : 
+    System.String InvalidSetterOnMetadataField 'get ' : 
+    System.String LazyMemberInfo_AccessorsNull 'get ' : 
+    System.String LazyMemberInfo_InvalidAccessorOnSimpleMember 'get ' : 
+    System.String LazyMemberinfo_InvalidEventAccessors_AccessorType 'get ' : 
+    System.String LazyMemberInfo_InvalidEventAccessors_Cardinality 'get ' : 
+    System.String LazyMemberinfo_InvalidPropertyAccessors_AccessorType 'get ' : 
+    System.String LazyMemberInfo_InvalidPropertyAccessors_Cardinality 'get ' : 
+    System.String LazyMemberInfo_NoAccessors 'get ' : 
+    System.String LazyServices_LazyResolvesToNull 'get ' : 
+    System.String MetadataItemNotSupported 'get ' : 
+    System.String NotImplemented_NotOverriddenByDerived 'get ' : 
+    System.String NotSupportedCatalogChanges 'get ' : 
+    System.String NotSupportedInterfaceMetadataView 'get ' : 
+    System.String NotSupportedReadOnlyDictionary 'get ' : 
+    System.String ObjectAlreadyInitialized 'get ' : 
+    System.String ObjectMustBeInitialized 'get ' : 
+    System.String ReentrantCompose 'get ' : 
+    System.String ReflectionContext_Requires_DefaultConstructor 'get ' : 
+    System.String ReflectionContext_Type_Required 'get ' : 
+    System.String ReflectionModel_ExportNotReadable 'get ' : 
+    System.String ReflectionModel_ExportThrewException 'get ' : 
+    System.String ReflectionModel_ImportCollectionAddThrewException 'get ' : 
+    System.String ReflectionModel_ImportCollectionClearThrewException 'get ' : 
+    System.String ReflectionModel_ImportCollectionConstructionThrewException 'get ' : 
+    System.String ReflectionModel_ImportCollectionGetThrewException 'get ' : 
+    System.String ReflectionModel_ImportCollectionIsReadOnlyThrewException 'get ' : 
+    System.String ReflectionModel_ImportCollectionNotWritable 'get ' : 
+    System.String ReflectionModel_ImportCollectionNull 'get ' : 
+    System.String ReflectionModel_ImportManyOnParameterCanOnlyBeAssigned 'get ' : 
+    System.String ReflectionModel_ImportNotAssignableFromExport 'get ' : 
+    System.String ReflectionModel_ImportNotWritable 'get ' : 
+    System.String ReflectionModel_ImportThrewException 'get ' : 
+    System.String ReflectionModel_InvalidExportDefinition 'get ' : 
+    System.String ReflectionModel_InvalidImportDefinition 'get ' : 
+    System.String ReflectionModel_InvalidMemberImportDefinition 'get ' : 
+    System.String ReflectionModel_InvalidParameterImportDefinition 'get ' : 
+    System.String ReflectionModel_InvalidPartDefinition 'get ' : 
+    System.String ReflectionModel_PartConstructorMissing 'get ' : 
+    System.String ReflectionModel_PartConstructorThrewException 'get ' : 
+    System.String ReflectionModel_PartOnImportsSatisfiedThrewException 'get ' : 
+    System.String TypeCatalog_DisplayNameFormat 'get ' : 
+    System.String TypeCatalog_Empty 'get ' : 
+    System.String InvalidOperation_RevertAndCompleteActionsMustNotThrow 'get ' : 
+  Methods:
+    get_ReentrantCompose(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionContext_Requires_DefaultConstructor(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionContext_Type_Required(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_ExportNotReadable(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_ExportThrewException(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_ImportCollectionAddThrewException(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_ImportCollectionClearThrewException(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_ImportCollectionConstructionThrewException(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_ImportCollectionGetThrewException(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_ImportCollectionIsReadOnlyThrewException(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_ImportCollectionNotWritable(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_ImportCollectionNull(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_ImportManyOnParameterCanOnlyBeAssigned(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_ImportNotAssignableFromExport(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_ImportNotWritable(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_ImportThrewException(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_InvalidExportDefinition(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_InvalidImportDefinition(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_InvalidMemberImportDefinition(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_InvalidParameterImportDefinition(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_InvalidPartDefinition(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_PartConstructorMissing(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_PartConstructorThrewException(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ReflectionModel_PartOnImportsSatisfiedThrewException(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_TypeCatalog_DisplayNameFormat(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_TypeCatalog_Empty(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_InvalidOperation_RevertAndCompleteActionsMustNotThrow(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ResourceManager(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Culture(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    set_Culture(CultureInfo): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Argument_AssemblyReflectionOnly(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Argument_ElementReflectionOnlyType(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Argument_ExportsEmpty(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Argument_ExportsTooMany(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Argument_NullElement(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Argument_ReflectionContextReturnsReflectionOnlyType(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ArgumentException_EmptyString(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ArgumentOutOfRange_InvalidEnum(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ArgumentOutOfRange_InvalidEnumInSet(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ArgumentValueType(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_AssemblyFileNotFoundOrWrongType(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_AtomicComposition_AlreadyCompleted(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_AtomicComposition_AlreadyNested(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_AtomicComposition_PartOfAnotherAtomicComposition(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CardinalityMismatch_NoExports(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CardinalityMismatch_TooManyExports(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CatalogMutation_Invalid(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionElement_UnknownOrigin(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionException_ChangesRejected(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionException_ElementPrefix(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionException_ErrorPrefix(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionException_MetadataViewInvalidConstructor(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionException_MultipleErrorsWithMultiplePaths(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionException_OriginFormat(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionException_OriginSeparator(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionException_PathsCountSeparator(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionException_ReviewErrorProperty(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionException_SingleErrorWithMultiplePaths(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionException_SingleErrorWithSinglePath(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionTrace_Discovery_AssemblyLoadFailed(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionTrace_Discovery_DefinitionContainsNoExports(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionTrace_Discovery_DefinitionMarkedWithPartNotDiscoverableAttribute(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionTrace_Discovery_DefinitionMismatchedExportArity(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionTrace_Discovery_MemberMarkedWithMultipleImportAndImportMany(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionTrace_Rejection_DefinitionRejected(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompositionTrace_Rejection_DefinitionResurrected(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ContractMismatch_ExportedValueCannotBeCastToT(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ContractMismatch_InvalidCastOnMetadataField(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ContractMismatch_MetadataViewImplementationCanNotBeNull(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ContractMismatch_MetadataViewImplementationDoesNotImplementViewInterface(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ContractMismatch_NullReferenceOnMetadataField(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_DirectoryNotFound(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Discovery_DuplicateMetadataNameValues(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Discovery_MetadataContainsValueWithInvalidType(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Discovery_ReservedMetadataNameUsed(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ExportDefinitionNotOnThisComposablePart(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ExportFactory_TooManyGenericParameters(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ExportNotValidOnIndexers(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ImportDefinitionNotOnThisComposablePart(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ImportEngine_ComposeTookTooManyIterations(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ImportEngine_InvalidStateForRecomposition(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ImportEngine_PartCannotActivate(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ImportEngine_PartCannotGetExportedValue(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ImportEngine_PartCannotSetImport(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ImportEngine_PartCycle(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ImportEngine_PreventedByExistingImport(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ImportNotSetOnPart(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ImportNotValidOnIndexers(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_InternalExceptionMessage(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_InvalidArgument_ReflectionContext(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_InvalidMetadataValue(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_InvalidMetadataView(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_InvalidOperation_DefinitionCannotBeRecomposed(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_InvalidOperation_GetExportedValueBeforePrereqImportSet(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_InvalidOperationReentrantCompose(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_InvalidSetterOnMetadataField(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_LazyMemberInfo_AccessorsNull(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_LazyMemberInfo_InvalidAccessorOnSimpleMember(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_LazyMemberinfo_InvalidEventAccessors_AccessorType(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_LazyMemberInfo_InvalidEventAccessors_Cardinality(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_LazyMemberinfo_InvalidPropertyAccessors_AccessorType(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_LazyMemberInfo_InvalidPropertyAccessors_Cardinality(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_LazyMemberInfo_NoAccessors(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_LazyServices_LazyResolvesToNull(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_MetadataItemNotSupported(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_NotImplemented_NotOverriddenByDerived(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_NotSupportedCatalogChanges(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_NotSupportedInterfaceMetadataView(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_NotSupportedReadOnlyDictionary(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ObjectAlreadyInitialized(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ObjectMustBeInitialized(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+Class System.ComponentModel.Composition.AttributedModelServices: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetMetadataView(IDictionary`2): PrivateScope, Public, Static, HideBySig
+    CreatePart(Object): PrivateScope, Public, Static, HideBySig
+    CreatePart(Object, ReflectionContext): PrivateScope, Public, Static, HideBySig
+    CreatePart(ComposablePartDefinition, Object): PrivateScope, Public, Static, HideBySig
+    CreatePartDefinition(Type, ICompositionElement): PrivateScope, Public, Static, HideBySig
+    CreatePartDefinition(Type, ICompositionElement, Boolean): PrivateScope, Public, Static, HideBySig
+    GetTypeIdentity(Type): PrivateScope, Public, Static, HideBySig
+    GetTypeIdentity(MethodInfo): PrivateScope, Public, Static, HideBySig
+    GetContractName(Type): PrivateScope, Public, Static, HideBySig
+    AddExportedValue(CompositionBatch, T): PrivateScope, Public, Static, HideBySig
+    ComposeExportedValue(CompositionContainer, T): PrivateScope, Public, Static, HideBySig
+    AddExportedValue(CompositionBatch, String, T): PrivateScope, Public, Static, HideBySig
+    ComposeExportedValue(CompositionContainer, String, T): PrivateScope, Public, Static, HideBySig
+    AddPart(CompositionBatch, Object): PrivateScope, Public, Static, HideBySig
+    ComposeParts(CompositionContainer, Object[]): PrivateScope, Public, Static, HideBySig
+    SatisfyImportsOnce(ICompositionService, Object): PrivateScope, Public, Static, HideBySig
+    SatisfyImportsOnce(ICompositionService, Object, ReflectionContext): PrivateScope, Public, Static, HideBySig
+    Exports(ComposablePartDefinition, Type): PrivateScope, Public, Static, HideBySig
+    Exports(ComposablePartDefinition): PrivateScope, Public, Static, HideBySig
+    Imports(ComposablePartDefinition, Type): PrivateScope, Public, Static, HideBySig
+    Imports(ComposablePartDefinition): PrivateScope, Public, Static, HideBySig
+    Imports(ComposablePartDefinition, Type, ImportCardinality): PrivateScope, Public, Static, HideBySig
+    Imports(ComposablePartDefinition, ImportCardinality): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.AttributedModel.AttributedModelDiscovery: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    CreatePartDefinitionIfDiscoverable(Type, ICompositionElement): PrivateScope, Public, Static, HideBySig
+    CreatePartDefinition(Type, PartCreationPolicyAttribute, Boolean, ICompositionElement): PrivateScope, Public, Static, HideBySig
+    CreatePart(Object): PrivateScope, Public, Static, HideBySig
+    CreatePart(Object, ReflectionContext): PrivateScope, Public, Static, HideBySig
+    CreatePart(ComposablePartDefinition, Object): PrivateScope, Public, Static, HideBySig
+    CreateParameterImportDefinition(ParameterInfo, ICompositionElement): PrivateScope, Public, Static, HideBySig
+    CreateMemberImportDefinition(MemberInfo, ICompositionElement): PrivateScope, Public, Static, HideBySig
+Interface System.ComponentModel.Composition.Primitives.ICompositionElement: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    System.String DisplayName 'get ' : 
+    System.ComponentModel.Composition.Primitives.ICompositionElement Origin 'get ' : 
+  Methods:
+    get_DisplayName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Origin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface System.ComponentModel.Composition.ReflectionModel.IReflectionPartCreationInfo: AutoLayout, AnsiClass, Class, ClassSemanticsMask, Abstract
+  Interfaces:
+    System.ComponentModel.Composition.Primitives.ICompositionElement
+  Properties:
+    Boolean IsDisposalRequired 'get ' : 
+    Boolean IsIdentityComparison 'get ' : 
+  Methods:
+    GetPartType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetLazyPartType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetConstructor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetMetadata(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetExports(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetImports(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_IsDisposalRequired(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsIdentityComparison(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class System.ComponentModel.Composition.AttributedModel.AttributedPartCreationInfo: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Type, System.ComponentModel.Composition.PartCreationPolicyAttribute, Boolean, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.ReflectionModel.IReflectionPartCreationInfo
+    System.ComponentModel.Composition.Primitives.ICompositionElement
+  Properties:
+    Boolean IsDisposalRequired 'get ' : 
+    Boolean IsIdentityComparison 'get ' : 
+  Methods:
+    GetPartType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetLazyPartType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetConstructor(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetMetadata(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetExports(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetImports(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_IsDisposalRequired(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsIdentityComparison(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    IsPartDiscoverable(): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.Primitives.ExportDefinition: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.Collections.Generic.IDictionary`2[System.String,System.Object]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ContractName 'get ' : 
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] Metadata 'get ' : 
+  Methods:
+    get_ContractName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Metadata(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.AttributedModel.AttributedExportDefinition: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ExportDefinition
+    Void .ctor(System.ComponentModel.Composition.AttributedModel.AttributedPartCreationInfo, System.Reflection.MemberInfo, System.ComponentModel.Composition.ExportAttribute, System.Type, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] Metadata 'get ' : 
+  Methods:
+    get_Metadata(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class System.ComponentModel.Composition.CatalogReflectionContextAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateReflectionContext(): PrivateScope, Public, HideBySig
+Class System.ComponentModel.Composition.CompositionExceptionDebuggerProxy: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.CompositionException): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.Exception] Exceptions 'get ' : 
+    System.String Message 'get ' : 
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.Exception] RootCauses 'get ' : 
+  Methods:
+    get_Exceptions(): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, HideBySig, SpecialName
+    get_RootCauses(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.Diagnostics.CompositionTrace: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    PartDefinitionResurrected(ComposablePartDefinition): PrivateScope, Assembly, Static, HideBySig
+    PartDefinitionRejected(ComposablePartDefinition, ChangeRejectedException): PrivateScope, Assembly, Static, HideBySig
+    AssemblyLoadFailed(DirectoryCatalog, String, Exception): PrivateScope, Assembly, Static, HideBySig
+    DefinitionMarkedWithPartNotDiscoverableAttribute(Type): PrivateScope, Assembly, Static, HideBySig
+    DefinitionMismatchedExportArity(Type, MemberInfo): PrivateScope, Assembly, Static, HideBySig
+    DefinitionContainsNoExports(Type): PrivateScope, Assembly, Static, HideBySig
+    MemberMarkedWithMultipleImportAndImportMany(ReflectionItem): PrivateScope, Assembly, Static, HideBySig
+Struct System.ComponentModel.Composition.Diagnostics.CompositionTraceId: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    System.ComponentModel.Composition.Diagnostics.CompositionTraceId Rejection_DefinitionRejected = 1 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.Diagnostics.CompositionTraceId Rejection_DefinitionResurrected = 2 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.Diagnostics.CompositionTraceId Discovery_AssemblyLoadFailed = 3 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.Diagnostics.CompositionTraceId Discovery_DefinitionMarkedWithPartNotDiscoverableAttribute = 4 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.Diagnostics.CompositionTraceId Discovery_DefinitionMismatchedExportArity = 5 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.Diagnostics.CompositionTraceId Discovery_DefinitionContainsNoExports = 6 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.Diagnostics.CompositionTraceId Discovery_MemberMarkedWithMultipleImportAndImportMany = 7 : Public, Static, Literal, HasDefault
+Class System.ComponentModel.Composition.ConstraintServices: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    CreateConstraint(String, String, IEnumerable`1, CreationPolicy): PrivateScope, Public, Static, HideBySig
+    CreatePartCreatorConstraint(Expression`1, ImportDefinition): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.CompositionContractMismatchException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Exception
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.ComponentModel.Composition.CompositionError: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.ComponentModel.Composition.Primitives.ICompositionElement, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.CompositionErrorId, System.String, System.ComponentModel.Composition.Primitives.ICompositionElement, System.Exception): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.ComponentModel.Composition.Primitives.ICompositionElement Element 'get ' : 
+    System.String Description 'get ' : 
+    System.Exception Exception 'get ' : 
+    System.ComponentModel.Composition.CompositionErrorId Id 'get ' : 
+    System.Exception InnerException 'get ' : 
+  Methods:
+    get_Element(): PrivateScope, Public, HideBySig, SpecialName
+    get_Description(): PrivateScope, Public, HideBySig, SpecialName
+    get_Exception(): PrivateScope, Public, HideBySig, SpecialName
+    get_Id(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_InnerException(): PrivateScope, Assembly, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Create(CompositionErrorId, String, Object[]): PrivateScope, Assembly, Static, HideBySig
+    Create(CompositionErrorId, ICompositionElement, String, Object[]): PrivateScope, Assembly, Static, HideBySig
+    Create(CompositionErrorId, ICompositionElement, Exception, String, Object[]): PrivateScope, Assembly, Static, HideBySig
+Struct System.ComponentModel.Composition.CompositionResult`1[T]: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  Type parameter: T
+  :System.ValueType
+    Void .ctor(T): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.CompositionError[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.CompositionError]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(T, System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.CompositionError]): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Succeeded 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.CompositionError] Errors 'get ' : 
+    T Value    'get ' : 
+  Methods:
+    get_Succeeded(): PrivateScope, Public, HideBySig, SpecialName
+    get_Errors(): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    ToResult(): PrivateScope, Assembly, HideBySig
+    ToResult(): PrivateScope, Assembly, HideBySig
+Class System.ComponentModel.Composition.Hosting.ExportProvider: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Events:
+    System.EventHandler`1[System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs] ExportsChanged: 
+    System.EventHandler`1[System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs] ExportsChanging: 
+  Methods:
+    add_ExportsChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ExportsChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_ExportsChanging(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ExportsChanging(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    GetExports(ImportDefinition): PrivateScope, Public, HideBySig
+    GetExports(ImportDefinition, AtomicComposition): PrivateScope, Public, HideBySig
+    TryGetExports(ImportDefinition, AtomicComposition, IEnumerable`1&(Out)): PrivateScope, Public, HideBySig
+    GetExport(): PrivateScope, Public, HideBySig
+    GetExport(String): PrivateScope, Public, HideBySig
+    GetExport(): PrivateScope, Public, HideBySig
+    GetExport(String): PrivateScope, Public, HideBySig
+    GetExports(Type, Type, String): PrivateScope, Public, HideBySig
+    GetExports(): PrivateScope, Public, HideBySig
+    GetExports(String): PrivateScope, Public, HideBySig
+    GetExports(): PrivateScope, Public, HideBySig
+    GetExports(String): PrivateScope, Public, HideBySig
+    GetExportedValue(): PrivateScope, Public, HideBySig
+    GetExportedValue(String): PrivateScope, Public, HideBySig
+    GetExportedValueOrDefault(): PrivateScope, Public, HideBySig
+    GetExportedValueOrDefault(String): PrivateScope, Public, HideBySig
+    GetExportedValues(): PrivateScope, Public, HideBySig
+    GetExportedValues(String): PrivateScope, Public, HideBySig
+Class System.ComponentModel.Composition.Hosting.CatalogExportProvider: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Composition.Hosting.ExportProvider
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog, System.ComponentModel.Composition.Hosting.CompositionOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    System.ComponentModel.Composition.Primitives.ComposablePartCatalog Catalog 'get ' : 
+    System.ComponentModel.Composition.Hosting.ExportProvider SourceProvider 'get set' : 
+  Methods:
+    get_Catalog(): PrivateScope, Public, HideBySig, SpecialName
+    get_SourceProvider(): PrivateScope, Public, HideBySig, SpecialName
+    set_SourceProvider(ExportProvider): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.ComponentModel.Composition.Primitives.Export: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.Func`1[System.Object]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Collections.Generic.IDictionary`2[System.String,System.Object], System.Func`1[System.Object]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Primitives.ExportDefinition, System.Func`1[System.Object]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.ComponentModel.Composition.Primitives.ExportDefinition Definition 'get ' : 
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] Metadata 'get ' : 
+    System.Object Value 'get ' : 
+  Methods:
+    get_Definition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Metadata(): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.Hosting.CatalogExportProvider+FactoryExport: AutoLayout, AnsiClass, Class, NestedAssembly, Abstract, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.Export
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartDefinition, System.ComponentModel.Composition.Primitives.ExportDefinition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.ComponentModel.Composition.Primitives.ExportDefinition Definition 'get ' : 
+  Methods:
+    get_Definition(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    CreateExportProduct(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class System.ComponentModel.Composition.Primitives.ComposablePartDefinition: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Fields:
+    System.Collections.Generic.IEnumerable`1[System.Tuple`2[System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.ComponentModel.Composition.Primitives.ExportDefinition]] _EmptyExports : Assembly, Static, InitOnly
+  Properties:
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ExportDefinition] ExportDefinitions 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ImportDefinition] ImportDefinitions 'get ' : 
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] Metadata 'get ' : 
+  Methods:
+    get_ExportDefinitions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ImportDefinitions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Metadata(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CreatePart(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TryGetExports(ImportDefinition, Tuple`2&(Out), IEnumerable`1&(Out)): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    GetGenericPartDefinition(): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+Class System.ComponentModel.Composition.Primitives.ComposablePart: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Properties:
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ExportDefinition] ExportDefinitions 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ImportDefinition] ImportDefinitions 'get ' : 
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] Metadata 'get ' : 
+  Methods:
+    get_ExportDefinitions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ImportDefinitions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Metadata(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Activate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetExportedValue(ExportDefinition): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetImport(ImportDefinition, IEnumerable`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class System.ComponentModel.Composition.Hosting.CatalogExportProvider+PartCreatorExport: AutoLayout, AnsiClass, Class, NestedAssembly, BeforeFieldInit
+  :System.ComponentModel.Composition.Hosting.CatalogExportProvider+FactoryExport
+    Void .ctor(System.ComponentModel.Composition.Hosting.CatalogExportProvider, System.ComponentModel.Composition.Primitives.ComposablePartDefinition, System.ComponentModel.Composition.Primitives.ExportDefinition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateExportProduct(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.Hosting.CatalogExportProvider+ScopeFactoryExport: AutoLayout, AnsiClass, Class, NestedAssembly, BeforeFieldInit
+  :System.ComponentModel.Composition.Hosting.CatalogExportProvider+FactoryExport
+    Void .ctor(ScopeManager, System.ComponentModel.Composition.Hosting.CompositionScopeDefinition, System.ComponentModel.Composition.Primitives.ComposablePartDefinition, System.ComponentModel.Composition.Primitives.ExportDefinition): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateExportProduct(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.Hosting.CatalogExportProvider+ScopeManager: AutoLayout, AnsiClass, Class, NestedAssembly, BeforeFieldInit
+  :System.ComponentModel.Composition.Hosting.ExportProvider
+    Void .ctor(System.ComponentModel.Composition.Hosting.CatalogExportProvider, System.ComponentModel.Composition.Hosting.CompositionScopeDefinition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateChildContainer(ComposablePartCatalog): PrivateScope, Assembly, HideBySig
+Class System.ComponentModel.Composition.Primitives.ComposablePartCatalog: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ComposablePartDefinition]
+    System.Collections.IEnumerable
+    System.IDisposable
+  Fields:
+    System.Collections.Generic.List`1[System.Tuple`2[System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.ComponentModel.Composition.Primitives.ExportDefinition]] _EmptyExportsList : Assembly, Static, InitOnly
+  Properties:
+    System.Linq.IQueryable`1[System.ComponentModel.Composition.Primitives.ComposablePartDefinition] Parts 'get ' : 
+  Methods:
+    get_Parts(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetExports(ImportDefinition): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetCandidateParts(ImportDefinition): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface System.ComponentModel.Composition.ICompositionService: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    SatisfyImportsOnce(ComposablePart): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class System.ComponentModel.Composition.Hosting.CompositionContainer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Composition.Hosting.ExportProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Hosting.ExportProvider[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Hosting.CompositionOptions, System.ComponentModel.Composition.Hosting.ExportProvider[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog, System.ComponentModel.Composition.Hosting.ExportProvider[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog, Boolean, System.ComponentModel.Composition.Hosting.ExportProvider[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog, System.ComponentModel.Composition.Hosting.CompositionOptions, System.ComponentModel.Composition.Hosting.ExportProvider[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.ICompositionService
+    System.IDisposable
+  Properties:
+    System.ComponentModel.Composition.Hosting.CompositionOptions CompositionOptions 'get ' : 
+    System.ComponentModel.Composition.Primitives.ComposablePartCatalog Catalog 'get ' : 
+    System.ComponentModel.Composition.Hosting.CatalogExportProvider CatalogExportProvider 'get ' : 
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.ComponentModel.Composition.Hosting.ExportProvider] Providers 'get ' : 
+  Methods:
+    get_CompositionOptions(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Catalog(): PrivateScope, Public, HideBySig, SpecialName
+    get_CatalogExportProvider(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Providers(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Compose(CompositionBatch): PrivateScope, Public, HideBySig
+    ReleaseExport(Export): PrivateScope, Public, HideBySig
+    ReleaseExport(Lazy`1): PrivateScope, Public, HideBySig
+    ReleaseExports(IEnumerable`1): PrivateScope, Public, HideBySig
+    ReleaseExports(IEnumerable`1): PrivateScope, Public, HideBySig
+    ReleaseExports(IEnumerable`1): PrivateScope, Public, HideBySig
+    SatisfyImportsOnce(ComposablePart): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnExportsChangedInternal(Object, ExportsChangeEventArgs): PrivateScope, Assembly, HideBySig
+    OnExportsChangingInternal(Object, ExportsChangeEventArgs): PrivateScope, Assembly, HideBySig
+Class System.ComponentModel.Composition.Hosting.CompositionLock: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Boolean IsThreadSafe 'get ' : 
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_IsThreadSafe(): PrivateScope, Public, HideBySig, SpecialName
+    LockComposition(): PrivateScope, Public, HideBySig
+    LockStateForRead(): PrivateScope, Public, HideBySig
+    LockStateForWrite(): PrivateScope, Public, HideBySig
+Class System.ComponentModel.Composition.Hosting.CompositionLock+CompositionLockHolder: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.Hosting.CompositionLock): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.ComponentModel.Composition.Diagnostics.CompositionTraceSource: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Properties:
+    Boolean CanWriteInformation 'get ' : 
+    Boolean CanWriteWarning 'get ' : 
+    Boolean CanWriteError 'get ' : 
+  Methods:
+    get_CanWriteInformation(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CanWriteWarning(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CanWriteError(): PrivateScope, Public, Static, HideBySig, SpecialName
+    WriteInformation(CompositionTraceId, String, Object[]): PrivateScope, Public, Static, HideBySig
+    WriteWarning(CompositionTraceId, String, Object[]): PrivateScope, Public, Static, HideBySig
+    WriteError(CompositionTraceId, String, Object[]): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.Diagnostics.TraceWriter: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+  Properties:
+    Boolean CanWriteInformation 'get ' : 
+    Boolean CanWriteWarning 'get ' : 
+    Boolean CanWriteError 'get ' : 
+  Methods:
+    get_CanWriteInformation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CanWriteWarning(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CanWriteError(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    WriteInformation(CompositionTraceId, String, Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WriteWarning(CompositionTraceId, String, Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WriteError(CompositionTraceId, String, Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class System.ComponentModel.Composition.Diagnostics.TraceSourceTraceWriter: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  :System.ComponentModel.Composition.Diagnostics.TraceWriter
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Diagnostics.TraceSource Source : Assembly, Static, InitOnly
+  Properties:
+    Boolean CanWriteInformation 'get ' : 
+    Boolean CanWriteWarning 'get ' : 
+    Boolean CanWriteError 'get ' : 
+  Methods:
+    get_CanWriteInformation(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CanWriteWarning(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CanWriteError(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    WriteInformation(CompositionTraceId, String, Object[]): PrivateScope, Public, Virtual, HideBySig
+    WriteWarning(CompositionTraceId, String, Object[]): PrivateScope, Public, Virtual, HideBySig
+    WriteError(CompositionTraceId, String, Object[]): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.Hosting.ImportSourceImportDefinitionHelpers: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    RemoveImportSource(ImportDefinition): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.Primitives.ImportDefinition: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Linq.Expressions.Expression`1[System.Func`2[System.ComponentModel.Composition.Primitives.ExportDefinition,System.Boolean]], System.String, System.ComponentModel.Composition.Primitives.ImportCardinality, Boolean, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Linq.Expressions.Expression`1[System.Func`2[System.ComponentModel.Composition.Primitives.ExportDefinition,System.Boolean]], System.String, System.ComponentModel.Composition.Primitives.ImportCardinality, Boolean, Boolean, System.Collections.Generic.IDictionary`2[System.String,System.Object]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.ComponentModel.Composition.Primitives.ImportCardinality, Boolean, Boolean, System.Collections.Generic.IDictionary`2[System.String,System.Object]): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String EmptyContractName : Assembly, Static, InitOnly
+  Properties:
+    System.String ContractName 'get ' : 
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] Metadata 'get ' : 
+    System.ComponentModel.Composition.Primitives.ImportCardinality Cardinality 'get ' : 
+    System.Linq.Expressions.Expression`1[System.Func`2[System.ComponentModel.Composition.Primitives.ExportDefinition,System.Boolean]] Constraint 'get ' : 
+    Boolean IsPrerequisite 'get ' : 
+    Boolean IsRecomposable 'get ' : 
+  Methods:
+    get_ContractName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Metadata(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Cardinality(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Constraint(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsPrerequisite(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsRecomposable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    IsConstraintSatisfiedBy(ExportDefinition): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ImportDefinition
+    Void .ctor(System.String, System.String, System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Type]], System.ComponentModel.Composition.Primitives.ImportCardinality, Boolean, Boolean, System.ComponentModel.Composition.CreationPolicy): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Type]], System.ComponentModel.Composition.Primitives.ImportCardinality, Boolean, Boolean, System.ComponentModel.Composition.CreationPolicy, System.Collections.Generic.IDictionary`2[System.String,System.Object]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String RequiredTypeIdentity 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Type]] RequiredMetadata 'get ' : 
+    System.ComponentModel.Composition.CreationPolicy RequiredCreationPolicy 'get ' : 
+    System.Linq.Expressions.Expression`1[System.Func`2[System.ComponentModel.Composition.Primitives.ExportDefinition,System.Boolean]] Constraint 'get ' : 
+  Methods:
+    get_RequiredTypeIdentity(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RequiredMetadata(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RequiredCreationPolicy(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Constraint(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    IsConstraintSatisfiedBy(ExportDefinition): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.Hosting.ImportSourceImportDefinitionHelpers+NonImportSourceImportDefinition: AutoLayout, AnsiClass, Class, NestedAssembly, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition
+    Void .ctor(System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ContractName 'get ' : 
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] Metadata 'get ' : 
+    System.ComponentModel.Composition.Primitives.ImportCardinality Cardinality 'get ' : 
+    System.Linq.Expressions.Expression`1[System.Func`2[System.ComponentModel.Composition.Primitives.ExportDefinition,System.Boolean]] Constraint 'get ' : 
+    Boolean IsPrerequisite 'get ' : 
+    Boolean IsRecomposable 'get ' : 
+    System.String RequiredTypeIdentity 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Type]] RequiredMetadata 'get ' : 
+    System.ComponentModel.Composition.CreationPolicy RequiredCreationPolicy 'get ' : 
+  Methods:
+    get_ContractName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Metadata(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Cardinality(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Constraint(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsPrerequisite(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsRecomposable(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    IsConstraintSatisfiedBy(ExportDefinition): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    get_RequiredTypeIdentity(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RequiredMetadata(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RequiredCreationPolicy(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class System.ComponentModel.Composition.ImportCardinalityMismatchExceptionDebuggerProxy: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.ImportCardinalityMismatchException): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Exception InnerException 'get ' : 
+    System.String Message 'get ' : 
+  Methods:
+    get_InnerException(): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, HideBySig, SpecialName
+Interface System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Events:
+    System.EventHandler`1[System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs] Changed: 
+    System.EventHandler`1[System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs] Changing: 
+  Methods:
+    add_Changed(EventHandler`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_Changed(EventHandler`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    add_Changing(EventHandler`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_Changing(EventHandler`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class System.ComponentModel.Composition.Hosting.FilteredCatalog: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ComposablePartCatalog
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog, System.Func`2[System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.Boolean]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog, System.Func`2[System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.Boolean], System.ComponentModel.Composition.Hosting.FilteredCatalog): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged
+  Properties:
+    System.ComponentModel.Composition.Hosting.FilteredCatalog Complement 'get ' : 
+  Events:
+    System.EventHandler`1[System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs] Changed: 
+    System.EventHandler`1[System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs] Changing: 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig
+    get_Complement(): PrivateScope, Public, HideBySig, SpecialName
+    GetExports(ImportDefinition): PrivateScope, Public, Virtual, HideBySig
+    add_Changed(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_Changed(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    add_Changing(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_Changing(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    IncludeDependencies(): PrivateScope, Public, HideBySig
+    IncludeDependencies(Func`2): PrivateScope, Public, HideBySig
+    IncludeDependents(): PrivateScope, Public, HideBySig
+    IncludeDependents(Func`2): PrivateScope, Public, HideBySig
+Interface System.ComponentModel.Composition.Hosting.FilteredCatalog+IComposablePartCatalogTraversal: AutoLayout, AnsiClass, Class, NestedAssembly, ClassSemanticsMask, Abstract
+  Methods:
+    Initialize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TryTraverse(ComposablePartDefinition, IEnumerable`1&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class System.ComponentModel.Composition.Hosting.FilteredCatalog+DependenciesTraversal: AutoLayout, AnsiClass, Class, NestedAssembly, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.Hosting.FilteredCatalog, System.Func`2[System.ComponentModel.Composition.Primitives.ImportDefinition,System.Boolean]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Hosting.FilteredCatalog+IComposablePartCatalogTraversal
+  Methods:
+    Initialize(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TryTraverse(ComposablePartDefinition, IEnumerable`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.ComponentModel.Composition.Hosting.FilteredCatalog+DependentsTraversal: AutoLayout, AnsiClass, Class, NestedAssembly, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.Hosting.FilteredCatalog, System.Func`2[System.ComponentModel.Composition.Primitives.ImportDefinition,System.Boolean]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Hosting.FilteredCatalog+IComposablePartCatalogTraversal
+  Methods:
+    Initialize(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TryTraverse(ComposablePartDefinition, IEnumerable`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.ComponentModel.Composition.Hosting.ScopingExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Exports(ComposablePartDefinition, String): PrivateScope, Public, Static, HideBySig
+    Imports(ComposablePartDefinition, String): PrivateScope, Public, Static, HideBySig
+    Imports(ComposablePartDefinition, String, ImportCardinality): PrivateScope, Public, Static, HideBySig
+    ContainsPartMetadataWithKey(ComposablePartDefinition, String): PrivateScope, Public, Static, HideBySig
+    ContainsPartMetadata(ComposablePartDefinition, String, T): PrivateScope, Public, Static, HideBySig
+    Filter(ComposablePartCatalog, Func`2): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.ExportAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ContractName 'get set' : 
+    System.Type ContractType 'get set' : 
+  Methods:
+    get_ContractName(): PrivateScope, Public, HideBySig, SpecialName
+    get_ContractType(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.InheritedExportAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Composition.ExportAttribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.ComponentModel.Composition.ExportServices: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.Type DefaultMetadataViewType : Assembly, Static, InitOnly
+    System.Type DefaultExportedValueType : Assembly, Static, InitOnly
+  Methods:
+    IsDefaultMetadataViewType(Type): PrivateScope, Assembly, Static, HideBySig
+    IsDictionaryConstructorViewType(Type): PrivateScope, Assembly, Static, HideBySig
+    CreateStronglyTypedLazyFactory(Type, Type): PrivateScope, Assembly, Static, HideBySig
+    CreateSemiStronglyTypedLazyFactory(Type, Type): PrivateScope, Assembly, Static, HideBySig
+    CreateStronglyTypedLazyOfTM(Export): PrivateScope, Assembly, Static, HideBySig
+    CreateStronglyTypedLazyOfT(Export): PrivateScope, Assembly, Static, HideBySig
+    CreateSemiStronglyTypedLazy(Export): PrivateScope, Assembly, Static, HideBySig
+    GetCastedExportedValue(Export): PrivateScope, Assembly, Static, HideBySig
+    CastExportedValue(ICompositionElement, Object): PrivateScope, Assembly, Static, HideBySig
+    CheckCardinality(ImportDefinition, IEnumerable`1): PrivateScope, Assembly, Static, HideBySig
+Class System.Lazy`2[T,TMetadata]: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  Type parameter: T
+  Type parameter: TMetadata
+  :System.Lazy`1[T]
+    Void .ctor(System.Func`1[T], TMetadata): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TMetadata): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TMetadata, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Func`1[T], TMetadata, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TMetadata, System.Threading.LazyThreadSafetyMode): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Func`1[T], TMetadata, System.Threading.LazyThreadSafetyMode): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    TMetadata Metadata 'get ' : 
+  Methods:
+    get_Metadata(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.Hosting.AtomicComposition: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Hosting.AtomicComposition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    SetValue(Object, Object): PrivateScope, Public, HideBySig
+    TryGetValue(Object, T&(Out)): PrivateScope, Public, HideBySig
+    TryGetValue(Object, Boolean, T&(Out)): PrivateScope, Public, HideBySig
+    AddCompleteAction(Action): PrivateScope, Public, HideBySig
+    AddRevertAction(Action): PrivateScope, Public, HideBySig
+    Complete(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.ComponentModel.Composition.Hosting.AtomicCompositionExtensions: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetValueAllowNull(AtomicComposition, T): PrivateScope, Assembly, Static, HideBySig
+    GetValueAllowNull(AtomicComposition, Object, T): PrivateScope, Assembly, Static, HideBySig
+    AddRevertActionAllowNull(AtomicComposition, Action): PrivateScope, Assembly, Static, HideBySig
+    AddCompleteActionAllowNull(AtomicComposition, Action): PrivateScope, Assembly, Static, HideBySig
+Class System.ComponentModel.Composition.Hosting.CompositionConstants: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String PartCreatorTypeIdentity : Assembly, Static, InitOnly
+    System.String PartCreationPolicyMetadataName = System.ComponentModel.Composition.CreationPolicy : Public, Static, Literal, HasDefault
+    System.String ImportSourceMetadataName = System.ComponentModel.Composition.ImportSource : Public, Static, Literal, HasDefault
+    System.String IsGenericPartMetadataName = System.ComponentModel.Composition.IsGenericPart : Public, Static, Literal, HasDefault
+    System.String GenericContractMetadataName = System.ComponentModel.Composition.GenericContractName : Public, Static, Literal, HasDefault
+    System.String GenericParametersMetadataName = System.ComponentModel.Composition.GenericParameters : Public, Static, Literal, HasDefault
+    System.String ExportTypeIdentityMetadataName = ExportTypeIdentity : Public, Static, Literal, HasDefault
+    System.String GenericImportParametersOrderMetadataName = System.ComponentModel.Composition.GenericImportParametersOrderMetadataName : Assembly, Static, Literal, HasDefault
+    System.String GenericExportParametersOrderMetadataName = System.ComponentModel.Composition.GenericExportParametersOrderMetadataName : Assembly, Static, Literal, HasDefault
+    System.String GenericPartArityMetadataName = System.ComponentModel.Composition.GenericPartArity : Assembly, Static, Literal, HasDefault
+    System.String GenericParameterConstraintsMetadataName = System.ComponentModel.Composition.GenericParameterConstraints : Assembly, Static, Literal, HasDefault
+    System.String GenericParameterAttributesMetadataName = System.ComponentModel.Composition.GenericParameterAttributes : Assembly, Static, Literal, HasDefault
+    System.String ProductDefinitionMetadataName = ProductDefinition : Assembly, Static, Literal, HasDefault
+    System.String PartCreatorContractName = System.ComponentModel.Composition.Contracts.ExportFactory : Assembly, Static, Literal, HasDefault
+Struct System.ComponentModel.Composition.Hosting.CompositionOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ComponentModel.Composition.Hosting.CompositionOptions Default = 0 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.Hosting.CompositionOptions DisableSilentRejection = 1 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.Hosting.CompositionOptions IsThreadSafe = 2 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.Hosting.CompositionOptions ExportCompositionService = 4 : Public, Static, Literal, HasDefault
+Class System.ComponentModel.Composition.Primitives.ComposablePartExceptionDebuggerProxy: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartException): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.ComponentModel.Composition.Primitives.ICompositionElement Element 'get ' : 
+    System.Exception InnerException 'get ' : 
+    System.String Message 'get ' : 
+  Methods:
+    get_Element(): PrivateScope, Public, HideBySig, SpecialName
+    get_InnerException(): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.Hosting.CompositionScopeDefinition: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ComposablePartCatalog
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog, System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Hosting.CompositionScopeDefinition]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog, System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Hosting.CompositionScopeDefinition], System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ExportDefinition]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged
+  Properties:
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Hosting.CompositionScopeDefinition] Children 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ExportDefinition] PublicSurface 'get ' : 
+  Events:
+    System.EventHandler`1[System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs] Changed: 
+    System.EventHandler`1[System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs] Changing: 
+  Methods:
+    get_Children(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PublicSurface(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig
+    GetExports(ImportDefinition): PrivateScope, Public, Virtual, HideBySig
+    GetExportsFromPublicSurface(ImportDefinition): PrivateScope, Assembly, HideBySig
+    add_Changed(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_Changed(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    add_Changing(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_Changing(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class System.ComponentModel.Composition.Hosting.CompositionScopeDefinitionDebuggerProxy: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.Hosting.CompositionScopeDefinition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.ComponentModel.Composition.Primitives.ComposablePartDefinition] Parts 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ExportDefinition] PublicSurface 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Hosting.CompositionScopeDefinition] Children 'get ' : 
+  Methods:
+    get_Parts(): PrivateScope, Public, HideBySig, SpecialName
+    get_PublicSurface(): PrivateScope, Public, HideBySig, SpecialName
+    get_Children(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface System.ComponentModel.Composition.Primitives.IPartCreatorImportDefinition: AutoLayout, AnsiClass, Class, ClassSemanticsMask, Abstract
+  Properties:
+    System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition ProductImportDefinition 'get ' : 
+  Methods:
+    get_ProductImportDefinition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class System.ComponentModel.Composition.Primitives.PrimitivesServices: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    IsGeneric(ComposablePartDefinition): PrivateScope, Public, Static, HideBySig
+    GetProductImportDefinition(ImportDefinition): PrivateScope, Public, Static, HideBySig
+    GetCandidateContractNames(ImportDefinition, ComposablePartDefinition): PrivateScope, Assembly, Static, HideBySig
+    IsImportDependentOnPart(ImportDefinition, ComposablePartDefinition, ExportDefinition, Boolean): PrivateScope, Assembly, Static, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.ExportFactoryCreator: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateStronglyTypedExportFactoryFactory(Type, Type): PrivateScope, Public, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.GenericServices: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetPureGenericParameters(Type): PrivateScope, Assembly, Static, HideBySig
+    GetPureGenericArity(Type): PrivateScope, Assembly, Static, HideBySig
+    GetGenericParametersOrder(Type): PrivateScope, Public, Static, HideBySig
+    GetGenericName(String, Int32[], Int32): PrivateScope, Public, Static, HideBySig
+    Reorder(T[], Int32[]): PrivateScope, Public, Static, HideBySig
+    CreateTypeSpecializations(Type[], Type[]): PrivateScope, Public, Static, HideBySig
+    CreateTypeSpecialization(Type, Type[]): PrivateScope, Public, Static, HideBySig
+    CanSpecialize(Type, IEnumerable`1, GenericParameterAttributes): PrivateScope, Public, Static, HideBySig
+    CanSpecialize(Type, IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    CanSpecialize(Type, GenericParameterAttributes): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.GenericSpecializationPartCreationInfo: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.ReflectionModel.IReflectionPartCreationInfo, System.ComponentModel.Composition.ReflectionModel.ReflectionComposablePartDefinition, System.Type[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.ReflectionModel.IReflectionPartCreationInfo
+    System.ComponentModel.Composition.Primitives.ICompositionElement
+  Properties:
+    System.ComponentModel.Composition.ReflectionModel.ReflectionComposablePartDefinition OriginalPart 'get ' : 
+    Boolean IsDisposalRequired 'get ' : 
+    Boolean IsIdentityComparison 'get ' : 
+    System.String DisplayName 'get ' : 
+    System.ComponentModel.Composition.Primitives.ICompositionElement Origin 'get ' : 
+  Methods:
+    get_OriginalPart(): PrivateScope, Public, HideBySig, SpecialName
+    GetPartType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetLazyPartType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetConstructor(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetMetadata(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TranslateExpot(ReflectionMemberExportDefinition, List`1): PrivateScope, Public, HideBySig
+    GetExports(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetImports(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_IsDisposalRequired(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsIdentityComparison(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DisplayName(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Origin(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    CanSpecialize(IDictionary`2, Type[]): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.PartCreatorExportDefinition: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ExportDefinition
+    Void .ctor(System.ComponentModel.Composition.Primitives.ExportDefinition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ContractName 'get ' : 
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] Metadata 'get ' : 
+  Methods:
+    get_ContractName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Metadata(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    IsProductConstraintSatisfiedBy(ImportDefinition, ExportDefinition): PrivateScope, Assembly, Static, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionImportDefinition: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition
+    Void .ctor(System.String, System.String, System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Type]], System.ComponentModel.Composition.Primitives.ImportCardinality, Boolean, Boolean, System.ComponentModel.Composition.CreationPolicy, System.Collections.Generic.IDictionary`2[System.String,System.Object], System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Primitives.ICompositionElement
+  Methods:
+    ToImportingItem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionParameterImportDefinition: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.ReflectionModel.ReflectionImportDefinition
+    Void .ctor(System.Lazy`1[System.Reflection.ParameterInfo], System.String, System.String, System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Type]], System.ComponentModel.Composition.Primitives.ImportCardinality, System.ComponentModel.Composition.CreationPolicy, System.Collections.Generic.IDictionary`2[System.String,System.Object], System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Lazy`1[System.Reflection.ParameterInfo] ImportingLazyParameter 'get ' : 
+  Methods:
+    ToImportingItem(): PrivateScope, Public, Virtual, HideBySig
+    get_ImportingLazyParameter(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.ReflectionModel.PartCreatorParameterImportDefinition: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.ReflectionModel.ReflectionParameterImportDefinition
+    Void .ctor(System.Lazy`1[System.Reflection.ParameterInfo], System.ComponentModel.Composition.Primitives.ICompositionElement, System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Primitives.IPartCreatorImportDefinition
+  Properties:
+    System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition ProductImportDefinition 'get ' : 
+    System.Linq.Expressions.Expression`1[System.Func`2[System.ComponentModel.Composition.Primitives.ExportDefinition,System.Boolean]] Constraint 'get ' : 
+  Methods:
+    get_ProductImportDefinition(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    IsConstraintSatisfiedBy(ExportDefinition): PrivateScope, Public, Virtual, HideBySig
+    get_Constraint(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionMemberImportDefinition: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.ReflectionModel.ReflectionImportDefinition
+    Void .ctor(System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo, System.String, System.String, System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Type]], System.ComponentModel.Composition.Primitives.ImportCardinality, Boolean, Boolean, System.ComponentModel.Composition.CreationPolicy, System.Collections.Generic.IDictionary`2[System.String,System.Object], System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo ImportingLazyMember 'get ' : 
+  Methods:
+    ToImportingItem(): PrivateScope, Public, Virtual, HideBySig
+    get_ImportingLazyMember(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.ReflectionModel.PartCreatorMemberImportDefinition: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.ReflectionModel.ReflectionMemberImportDefinition
+    Void .ctor(System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo, System.ComponentModel.Composition.Primitives.ICompositionElement, System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Primitives.IPartCreatorImportDefinition
+  Properties:
+    System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition ProductImportDefinition 'get ' : 
+    System.Linq.Expressions.Expression`1[System.Func`2[System.ComponentModel.Composition.Primitives.ExportDefinition,System.Boolean]] Constraint 'get ' : 
+  Methods:
+    get_ProductImportDefinition(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    IsConstraintSatisfiedBy(ExportDefinition): PrivateScope, Public, Virtual, HideBySig
+    get_Constraint(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Interface System.ComponentModel.Composition.IAttributedImport: AutoLayout, AnsiClass, Class, ClassSemanticsMask, Abstract
+  Properties:
+    System.String ContractName 'get ' : 
+    System.Type ContractType 'get ' : 
+    Boolean AllowRecomposition 'get ' : 
+    System.ComponentModel.Composition.CreationPolicy RequiredCreationPolicy 'get ' : 
+    System.ComponentModel.Composition.Primitives.ImportCardinality Cardinality 'get ' : 
+    System.ComponentModel.Composition.ImportSource Source 'get ' : 
+  Methods:
+    get_ContractName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ContractType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AllowRecomposition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RequiredCreationPolicy(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Cardinality(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Source(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class System.ComponentModel.Composition.ImportCardinalityMismatchException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Exception
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.ComponentModel.Composition.ImportManyAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.IAttributedImport
+  Properties:
+    System.String ContractName 'get set' : 
+    System.Type ContractType 'get set' : 
+    Boolean AllowRecomposition 'get set' : 
+    System.ComponentModel.Composition.CreationPolicy RequiredCreationPolicy 'get set' : 
+    System.ComponentModel.Composition.ImportSource Source 'get set' : 
+  Methods:
+    get_ContractName(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ContractType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AllowRecomposition(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AllowRecomposition(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_RequiredCreationPolicy(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_RequiredCreationPolicy(CreationPolicy): PrivateScope, Public, HideBySig, SpecialName
+    get_Source(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Source(ImportSource): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.ErrorBuilder: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    PreventedByExistingImport(ComposablePart, ImportDefinition): PrivateScope, Public, Static, HideBySig
+    InvalidStateForRecompposition(ComposablePart): PrivateScope, Public, Static, HideBySig
+    ComposeTookTooManyIterations(Int32): PrivateScope, Public, Static, HideBySig
+    CreateImportCardinalityMismatch(ImportCardinalityMismatchException, ImportDefinition): PrivateScope, Public, Static, HideBySig
+    CreatePartCannotActivate(ComposablePart, Exception): PrivateScope, Public, Static, HideBySig
+    CreatePartCannotSetImport(ComposablePart, ImportDefinition, Exception): PrivateScope, Public, Static, HideBySig
+    CreateCannotGetExportedValue(ComposablePart, ExportDefinition, Exception): PrivateScope, Public, Static, HideBySig
+    CreatePartCycle(ComposablePart): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.CompositionErrorDebuggerProxy: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.CompositionError): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Description 'get ' : 
+    System.Exception Exception 'get ' : 
+    System.ComponentModel.Composition.Primitives.ICompositionElement Element 'get ' : 
+  Methods:
+    get_Description(): PrivateScope, Public, HideBySig, SpecialName
+    get_Exception(): PrivateScope, Public, HideBySig, SpecialName
+    get_Element(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.ExceptionBuilder: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    CreateDiscoveryException(String, String[]): PrivateScope, Public, Static, HideBySig
+    CreateContainsNullElement(String): PrivateScope, Public, Static, HideBySig
+    CreateObjectDisposed(Object): PrivateScope, Public, Static, HideBySig
+    CreateNotOverriddenByDerived(String): PrivateScope, Public, Static, HideBySig
+    CreateExportDefinitionNotOnThisComposablePart(String): PrivateScope, Public, Static, HideBySig
+    CreateImportDefinitionNotOnThisComposablePart(String): PrivateScope, Public, Static, HideBySig
+    CreateCannotGetExportedValue(ComposablePart, ExportDefinition, Exception): PrivateScope, Public, Static, HideBySig
+    CreateReflectionModelInvalidPartDefinition(String, Type): PrivateScope, Public, Static, HideBySig
+    ExportFactory_TooManyGenericParameters(String): PrivateScope, Public, Static, HideBySig
+Struct System.ComponentModel.Composition.ExportCardinalityCheckResult: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ComponentModel.Composition.ExportCardinalityCheckResult Match = 0 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.ExportCardinalityCheckResult NoExports = 1 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.ExportCardinalityCheckResult TooManyExports = 2 : Public, Static, Literal, HasDefault
+Class System.ComponentModel.Composition.ExportFactory`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(System.Func`1[System.Tuple`2[T,System.Action]]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateExport(): PrivateScope, Public, HideBySig
+Class System.ComponentModel.Composition.ExportFactory`2[T,TMetadata]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+  Type parameter: TMetadata
+  :System.ComponentModel.Composition.ExportFactory`1[T]
+    Void .ctor(System.Func`1[System.Tuple`2[T,System.Action]], TMetadata): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    TMetadata Metadata 'get ' : 
+  Methods:
+    get_Metadata(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.ExportLifetimeContext`1[T]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(T, System.Action): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    T Value    'get ' : 
+  Methods:
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.ComponentModel.Composition.Hosting.AggregateCatalog: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ComposablePartCatalog
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ComposablePartCatalog]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged
+  Properties:
+    System.Collections.Generic.ICollection`1[System.ComponentModel.Composition.Primitives.ComposablePartCatalog] Catalogs 'get ' : 
+  Events:
+    System.EventHandler`1[System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs] Changed: 
+    System.EventHandler`1[System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs] Changing: 
+  Methods:
+    add_Changed(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_Changed(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    add_Changing(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_Changing(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetExports(ImportDefinition): PrivateScope, Public, Virtual, HideBySig
+    get_Catalogs(): PrivateScope, Public, HideBySig, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.Hosting.AggregateExportProvider: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Composition.Hosting.ExportProvider
+    Void .ctor(System.ComponentModel.Composition.Hosting.ExportProvider[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Hosting.ExportProvider]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.ComponentModel.Composition.Hosting.ExportProvider] Providers 'get ' : 
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Providers(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.Hosting.AssemblyCatalog: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ComposablePartCatalog
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Reflection.ReflectionContext): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Reflection.ReflectionContext, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Reflection.Assembly, System.Reflection.ReflectionContext): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Reflection.Assembly, System.Reflection.ReflectionContext, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Reflection.Assembly): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Reflection.Assembly, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Primitives.ICompositionElement
+  Properties:
+    System.Reflection.Assembly Assembly 'get ' : 
+  Methods:
+    GetExports(ImportDefinition): PrivateScope, Public, Virtual, HideBySig
+    get_Assembly(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.Hosting.AssemblyCatalogDebuggerProxy: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.Hosting.AssemblyCatalog): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Reflection.Assembly Assembly 'get ' : 
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.ComponentModel.Composition.Primitives.ComposablePartDefinition] Parts 'get ' : 
+  Methods:
+    get_Assembly(): PrivateScope, Public, HideBySig, SpecialName
+    get_Parts(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.Hosting.CatalogExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    CreateCompositionService(ComposablePartCatalog): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ComposablePartDefinition], System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ComposablePartDefinition], System.ComponentModel.Composition.Hosting.AtomicComposition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ComposablePartDefinition] AddedDefinitions 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ComposablePartDefinition] RemovedDefinitions 'get ' : 
+    System.ComponentModel.Composition.Hosting.AtomicComposition AtomicComposition 'get set' : 
+  Methods:
+    get_AddedDefinitions(): PrivateScope, Public, HideBySig, SpecialName
+    get_RemovedDefinitions(): PrivateScope, Public, HideBySig, SpecialName
+    get_AtomicComposition(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.Hosting.ComposablePartCatalogCollection: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ComposablePartCatalog], System.Action`1[System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs], System.Action`1[System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.ICollection`1[System.ComponentModel.Composition.Primitives.ComposablePartCatalog]
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ComposablePartCatalog]
+    System.Collections.IEnumerable
+    System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged
+    System.IDisposable
+  Properties:
+    Int32 Count 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+    Boolean HasChanged 'get ' : 
+  Events:
+    System.EventHandler`1[System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs] Changed: 
+    System.EventHandler`1[System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs] Changing: 
+  Methods:
+    Add(ComposablePartCatalog): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    add_Changed(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_Changed(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    add_Changing(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_Changing(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Clear(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Contains(ComposablePartCatalog): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CopyTo(ComposablePartCatalog[], Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsReadOnly(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Remove(ComposablePartCatalog): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_HasChanged(): PrivateScope, Assembly, HideBySig, SpecialName
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnChanged(Object, ComposablePartCatalogChangeEventArgs): PrivateScope, Public, HideBySig
+    OnChanging(Object, ComposablePartCatalogChangeEventArgs): PrivateScope, Public, HideBySig
+Class System.ComponentModel.Composition.Hosting.ComposablePartExportProvider: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Composition.Hosting.ExportProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Hosting.CompositionOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    System.ComponentModel.Composition.Hosting.ExportProvider SourceProvider 'get set' : 
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_SourceProvider(): PrivateScope, Public, HideBySig, SpecialName
+    set_SourceProvider(ExportProvider): PrivateScope, Public, HideBySig, SpecialName
+    Compose(CompositionBatch): PrivateScope, Public, HideBySig
+Class System.ComponentModel.Composition.Hosting.CompositionBatch: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ComposablePart], System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ComposablePart]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.ComponentModel.Composition.Primitives.ComposablePart] PartsToAdd 'get ' : 
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.ComponentModel.Composition.Primitives.ComposablePart] PartsToRemove 'get ' : 
+  Methods:
+    get_PartsToAdd(): PrivateScope, Public, HideBySig, SpecialName
+    get_PartsToRemove(): PrivateScope, Public, HideBySig, SpecialName
+    AddPart(ComposablePart): PrivateScope, Public, HideBySig
+    RemovePart(ComposablePart): PrivateScope, Public, HideBySig
+    AddExport(Export): PrivateScope, Public, HideBySig
+Class System.ComponentModel.Composition.Hosting.CompositionService: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.ICompositionService
+    System.IDisposable
+  Methods:
+    SatisfyImportsOnce(ComposablePart): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.ComponentModel.Composition.Hosting.CompositionServices: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.Type InheritedExportAttributeType : Assembly, Static, InitOnly
+    System.Type ExportAttributeType : Assembly, Static, InitOnly
+    System.Type AttributeType : Assembly, Static, InitOnly
+    System.Type ObjectType : Assembly, Static, InitOnly
+  Methods:
+    GetDefaultTypeFromMember(MemberInfo): PrivateScope, Assembly, Static, HideBySig
+    AdjustSpecifiedTypeIdentityType(Type, MemberInfo): PrivateScope, Assembly, Static, HideBySig
+    AdjustSpecifiedTypeIdentityType(Type, Type): PrivateScope, Assembly, Static, HideBySig
+    GetContractInfoFromExport(MemberInfo, ExportAttribute, Type&(Out), String&(Out)): PrivateScope, Assembly, Static, HideBySig
+    GetTypeIdentityFromExport(MemberInfo, Type): PrivateScope, Assembly, Static, HideBySig
+    IsContractNameSameAsTypeIdentity(ExportAttribute): PrivateScope, Assembly, Static, HideBySig
+    GetContractTypeFromImport(IAttributedImport, ImportType): PrivateScope, Assembly, Static, HideBySig
+    GetContractNameFromImport(IAttributedImport, ImportType): PrivateScope, Assembly, Static, HideBySig
+    GetTypeIdentityFromImport(IAttributedImport, ImportType): PrivateScope, Assembly, Static, HideBySig
+    GetPartMetadataForType(Type, CreationPolicy): PrivateScope, Assembly, Static, HideBySig
+    TryExportMetadataForMember(MemberInfo, IDictionary`2&(Out)): PrivateScope, Assembly, Static, HideBySig
+    GetRequiredMetadata(Type): PrivateScope, Assembly, Static, HideBySig
+    GetImportMetadata(ImportType, IAttributedImport): PrivateScope, Assembly, Static, HideBySig
+    GetImportMetadata(Type, IAttributedImport): PrivateScope, Assembly, Static, HideBySig
+    GetExportedValueFromComposedPart(ImportEngine, ComposablePart, ExportDefinition): PrivateScope, Assembly, Static, HideBySig
+    IsRecomposable(ComposablePart): PrivateScope, Assembly, Static, HideBySig
+    TryInvoke(Action): PrivateScope, Assembly, Static, HideBySig
+    TryFire(EventHandler`1, Object, TEventArgs): PrivateScope, Assembly, Static, HideBySig
+    GetRequiredCreationPolicy(ImportDefinition): PrivateScope, Assembly, Static, HideBySig
+    IsAtMostOne(ImportCardinality): PrivateScope, Assembly, Static, HideBySig
+Class System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ExportDefinition], System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ExportDefinition], System.ComponentModel.Composition.Hosting.AtomicComposition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ExportDefinition] AddedExports 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ExportDefinition] RemovedExports 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.String] ChangedContractNames 'get ' : 
+    System.ComponentModel.Composition.Hosting.AtomicComposition AtomicComposition 'get set' : 
+  Methods:
+    get_AddedExports(): PrivateScope, Public, HideBySig, SpecialName
+    get_RemovedExports(): PrivateScope, Public, HideBySig, SpecialName
+    get_ChangedContractNames(): PrivateScope, Public, HideBySig, SpecialName
+    get_AtomicComposition(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.Hosting.ImportEngine: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.Hosting.ExportProvider): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Hosting.ExportProvider, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Hosting.ExportProvider, System.ComponentModel.Composition.Hosting.CompositionOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.ICompositionService
+    System.IDisposable
+  Methods:
+    PreviewImports(ComposablePart, AtomicComposition): PrivateScope, Public, HideBySig
+    SatisfyImports(ComposablePart): PrivateScope, Public, HideBySig
+    SatisfyImportsOnce(ComposablePart): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ReleaseImports(ComposablePart, AtomicComposition): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    IsRequiredImportForPreview(ImportDefinition): PrivateScope, Assembly, Static, HideBySig
+Class System.ComponentModel.Composition.Hosting.TypeCatalog: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ComposablePartCatalog
+    Void .ctor(System.Type[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.Type]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.Type], System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.Type], System.Reflection.ReflectionContext): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.Type], System.Reflection.ReflectionContext, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Primitives.ICompositionElement
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig
+    GetCandidateParts(ImportDefinition): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.ImportingConstructorAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Interface System.ComponentModel.Composition.IPartImportsSatisfiedNotification: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    OnImportsSatisfied(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class System.ComponentModel.Composition.MetadataServices: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] EmptyMetadata : Public, Static, InitOnly
+  Methods:
+    AsReadOnly(IDictionary`2): PrivateScope, Public, Static, HideBySig
+    GetValue(IDictionary`2, String): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.Primitives.ComposablePartCatalogDebuggerProxy: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.ComponentModel.Composition.Primitives.ComposablePartDefinition] Parts 'get ' : 
+  Methods:
+    get_Parts(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.Primitives.ComposablePartException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Exception
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.ComponentModel.Composition.Primitives.ICompositionElement, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.ComponentModel.Composition.Primitives.ICompositionElement Element 'get ' : 
+  Methods:
+    get_Element(): PrivateScope, Public, HideBySig, SpecialName
+    GetObjectData(SerializationInfo, StreamingContext): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.Primitives.SerializableCompositionElement: AutoLayout, AnsiClass, Class, Serializable, BeforeFieldInit
+    Void .ctor(System.String, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Primitives.ICompositionElement
+  Properties:
+    System.String DisplayName 'get ' : 
+    System.ComponentModel.Composition.Primitives.ICompositionElement Origin 'get ' : 
+  Methods:
+    get_DisplayName(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Origin(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    FromICompositionElement(ICompositionElement): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.Primitives.CompositionElement: AutoLayout, AnsiClass, Class, Serializable, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.SerializableCompositionElement
+    Void .ctor(System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Object UnderlyingObject 'get ' : 
+  Methods:
+    get_UnderlyingObject(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.Primitives.CompositionElementDebuggerProxy: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.Primitives.CompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String DisplayName 'get ' : 
+    System.ComponentModel.Composition.Primitives.ICompositionElement Origin 'get ' : 
+    System.Object UnderlyingObject 'get ' : 
+  Methods:
+    get_DisplayName(): PrivateScope, Public, HideBySig, SpecialName
+    get_Origin(): PrivateScope, Public, HideBySig, SpecialName
+    get_UnderlyingObject(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.Primitives.CompositionElementExtensions: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ToSerializableElement(ICompositionElement): PrivateScope, Public, Static, HideBySig
+    ToElement(Export): PrivateScope, Public, Static, HideBySig
+    ToElement(ExportDefinition): PrivateScope, Public, Static, HideBySig
+    ToElement(ImportDefinition): PrivateScope, Public, Static, HideBySig
+    ToElement(ComposablePart): PrivateScope, Public, Static, HideBySig
+    ToElement(ComposablePartDefinition): PrivateScope, Public, Static, HideBySig
+    GetDisplayName(ComposablePartDefinition): PrivateScope, Public, Static, HideBySig
+    GetDisplayName(ComposablePartCatalog): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.Primitives.ExportedDelegate: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Object, System.Reflection.MethodInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateDelegate(Type): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct System.ComponentModel.Composition.Primitives.ImportCardinality: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ComponentModel.Composition.Primitives.ImportCardinality ZeroOrOne = 0 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.Primitives.ImportCardinality ExactlyOne = 1 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.Primitives.ImportCardinality ZeroOrMore = 2 : Public, Static, Literal, HasDefault
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionComposablePart: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ComposablePart
+    Void .ctor(System.ComponentModel.Composition.ReflectionModel.ReflectionComposablePartDefinition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.ReflectionModel.ReflectionComposablePartDefinition, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Primitives.ICompositionElement
+  Properties:
+    System.ComponentModel.Composition.ReflectionModel.ReflectionComposablePartDefinition Definition 'get ' : 
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] Metadata 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ImportDefinition] ImportDefinitions 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ExportDefinition] ExportDefinitions 'get ' : 
+  Methods:
+    get_Definition(): PrivateScope, Public, HideBySig, SpecialName
+    get_Metadata(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ImportDefinitions(): PrivateScope, Public, Final, Virtual, HideBySig, SpecialName
+    get_ExportDefinitions(): PrivateScope, Public, Final, Virtual, HideBySig, SpecialName
+    GetExportedValue(ExportDefinition): PrivateScope, Public, Virtual, HideBySig
+    SetImport(ImportDefinition, IEnumerable`1): PrivateScope, Public, Virtual, HideBySig
+    Activate(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.DisposableReflectionComposablePart: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  :System.ComponentModel.Composition.ReflectionModel.ReflectionComposablePart
+    Void .ctor(System.ComponentModel.Composition.ReflectionModel.ReflectionComposablePartDefinition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+Struct System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(System.Reflection.MemberInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Reflection.MemberTypes, System.Reflection.MemberInfo[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Reflection.MemberTypes, System.Func`1[System.Reflection.MemberInfo[]]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Reflection.MemberTypes MemberType 'get ' : 
+  Methods:
+    get_MemberType(): PrivateScope, Public, HideBySig, SpecialName
+    GetAccessors(): PrivateScope, Public, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(LazyMemberInfo, LazyMemberInfo): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(LazyMemberInfo, LazyMemberInfo): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct System.ComponentModel.Composition.ReflectionModel.ReflectionItemType: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ComponentModel.Composition.ReflectionModel.ReflectionItemType Parameter = 0 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.ReflectionModel.ReflectionItemType Field = 1 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.ReflectionModel.ReflectionItemType Property = 2 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.ReflectionModel.ReflectionItemType Method = 3 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.ReflectionModel.ReflectionItemType Type = 4 : Public, Static, Literal, HasDefault
+Class System.ComponentModel.Composition.MetadataViewProvider: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetMetadataView(IDictionary`2): PrivateScope, Public, Static, HideBySig
+    IsViewTypeValid(Type): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.MetadataViewImplementationAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Type ImplementationType 'get set' : 
+  Methods:
+    get_ImplementationType(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.PartCreationPolicyAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.ComponentModel.Composition.CreationPolicy): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.ComponentModel.Composition.PartCreationPolicyAttribute Default : Assembly, Static
+    System.ComponentModel.Composition.PartCreationPolicyAttribute Shared : Assembly, Static
+  Properties:
+    System.ComponentModel.Composition.CreationPolicy CreationPolicy 'get set' : 
+  Methods:
+    get_CreationPolicy(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.PartMetadataAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get set' : 
+    System.Object Value 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.PartNotDiscoverableAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionExtensions: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ToReflectionMember(LazyMemberInfo): PrivateScope, Public, Static, HideBySig
+    ToLazyMember(MemberInfo): PrivateScope, Public, Static, HideBySig
+    ToReflectionWriteableMember(LazyMemberInfo): PrivateScope, Public, Static, HideBySig
+    ToReflectionProperty(PropertyInfo): PrivateScope, Public, Static, HideBySig
+    CreateReflectionProperty(MethodInfo, MethodInfo): PrivateScope, Public, Static, HideBySig
+    ToReflectionParameter(ParameterInfo): PrivateScope, Public, Static, HideBySig
+    ToReflectionMethod(MethodInfo): PrivateScope, Public, Static, HideBySig
+    ToReflectionField(FieldInfo): PrivateScope, Public, Static, HideBySig
+    ToReflectionType(Type): PrivateScope, Public, Static, HideBySig
+    ToReflectionWritableMember(MemberInfo): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.ImportingItem: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+  Properties:
+    System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition Definition 'get ' : 
+    System.ComponentModel.Composition.ReflectionModel.ImportType ImportType 'get ' : 
+  Methods:
+    get_Definition(): PrivateScope, Public, HideBySig, SpecialName
+    get_ImportType(): PrivateScope, Public, HideBySig, SpecialName
+    CastExportsToImportType(Export[]): PrivateScope, Public, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.ImportingParameter: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.ReflectionModel.ImportingItem
+    Void .ctor(System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition, System.ComponentModel.Composition.ReflectionModel.ImportType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.ComponentModel.Composition.ReflectionModel.ExportingMember: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.Primitives.ExportDefinition, System.ComponentModel.Composition.ReflectionModel.ReflectionMember): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean RequiresInstance 'get ' : 
+    System.ComponentModel.Composition.Primitives.ExportDefinition Definition 'get ' : 
+  Methods:
+    get_RequiresInstance(): PrivateScope, Public, HideBySig, SpecialName
+    get_Definition(): PrivateScope, Public, HideBySig, SpecialName
+    GetExportedValue(Object, Object): PrivateScope, Public, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.ImportingMember: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.ReflectionModel.ImportingItem
+    Void .ctor(System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition, System.ComponentModel.Composition.ReflectionModel.ReflectionWritableMember, System.ComponentModel.Composition.ReflectionModel.ImportType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    SetExportedValue(Object, Object): PrivateScope, Public, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.ImportType: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Type, System.ComponentModel.Composition.Primitives.ImportCardinality): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.Dictionary`2[System.Type,System.Func`2[System.ComponentModel.Composition.Primitives.Export,System.Object]] _castSingleValueCache : Assembly, Static
+  Properties:
+    Boolean IsAssignableCollectionType 'get ' : 
+    System.Type ElementType 'get set' : 
+    System.Type ActualType 'get ' : 
+    Boolean IsPartCreator 'get set' : 
+    System.Type ContractType 'get ' : 
+    System.Func`2[System.ComponentModel.Composition.Primitives.Export,System.Object] CastExport 'get ' : 
+    System.Type MetadataViewType 'get set' : 
+  Methods:
+    get_IsAssignableCollectionType(): PrivateScope, Public, HideBySig, SpecialName
+    get_ElementType(): PrivateScope, Public, HideBySig, SpecialName
+    get_ActualType(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsPartCreator(): PrivateScope, Public, HideBySig, SpecialName
+    get_ContractType(): PrivateScope, Public, HideBySig, SpecialName
+    get_CastExport(): PrivateScope, Public, HideBySig, SpecialName
+    get_MetadataViewType(): PrivateScope, Public, HideBySig, SpecialName
+    IsDescendentOf(Type, Type): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionComposablePartDefinition: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ComposablePartDefinition
+    Void .ctor(System.ComponentModel.Composition.ReflectionModel.IReflectionPartCreationInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Primitives.ICompositionElement
+  Properties:
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ExportDefinition] ExportDefinitions 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ImportDefinition] ImportDefinitions 'get ' : 
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] Metadata 'get ' : 
+    Boolean IsDisposalRequired 'get ' : 
+  Methods:
+    GetPartType(): PrivateScope, Public, HideBySig
+    GetLazyPartType(): PrivateScope, Public, HideBySig
+    GetConstructor(): PrivateScope, Public, HideBySig
+    get_ExportDefinitions(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ImportDefinitions(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Metadata(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsDisposalRequired(): PrivateScope, Assembly, HideBySig, SpecialName
+    CreatePart(): PrivateScope, Public, Virtual, HideBySig
+    GetGenericPartDefinition(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    TryGetExports(ImportDefinition, Tuple`2&(Out), IEnumerable`1&(Out)): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    TryMakeGenericPartDefinition(Type[], ComposablePartDefinition&(Out)): PrivateScope, Assembly, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionMemberExportDefinition: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ExportDefinition
+    Void .ctor(System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo, System.ComponentModel.Composition.Primitives.ExportDefinition, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Primitives.ICompositionElement
+  Properties:
+    System.String ContractName 'get ' : 
+    System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo ExportingLazyMember 'get ' : 
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] Metadata 'get ' : 
+  Methods:
+    get_ContractName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ExportingLazyMember(): PrivateScope, Public, HideBySig, SpecialName
+    get_Metadata(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    GetIndex(): PrivateScope, Public, HideBySig
+    ToExportingMember(): PrivateScope, Public, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetPartType(ComposablePartDefinition): PrivateScope, Public, Static, HideBySig
+    IsDisposalRequired(ComposablePartDefinition): PrivateScope, Public, Static, HideBySig
+    GetExportingMember(ExportDefinition): PrivateScope, Public, Static, HideBySig
+    GetImportingMember(ImportDefinition): PrivateScope, Public, Static, HideBySig
+    GetImportingParameter(ImportDefinition): PrivateScope, Public, Static, HideBySig
+    IsImportingParameter(ImportDefinition): PrivateScope, Public, Static, HideBySig
+    IsExportFactoryImportDefinition(ImportDefinition): PrivateScope, Public, Static, HideBySig
+    GetExportFactoryProductImportDefinition(ImportDefinition): PrivateScope, Public, Static, HideBySig
+    CreatePartDefinition(Lazy`1, Boolean, Lazy`1, Lazy`1, Lazy`1, ICompositionElement): PrivateScope, Public, Static, HideBySig
+    CreateExportDefinition(LazyMemberInfo, String, Lazy`1, ICompositionElement): PrivateScope, Public, Static, HideBySig
+    CreateImportDefinition(LazyMemberInfo, String, String, IEnumerable`1, ImportCardinality, Boolean, CreationPolicy, ICompositionElement): PrivateScope, Public, Static, HideBySig
+    CreateImportDefinition(LazyMemberInfo, String, String, IEnumerable`1, ImportCardinality, Boolean, CreationPolicy, IDictionary`2, Boolean, ICompositionElement): PrivateScope, Public, Static, HideBySig
+    CreateImportDefinition(LazyMemberInfo, String, String, IEnumerable`1, ImportCardinality, Boolean, Boolean, CreationPolicy, IDictionary`2, Boolean, ICompositionElement): PrivateScope, Public, Static, HideBySig
+    CreateImportDefinition(Lazy`1, String, String, IEnumerable`1, ImportCardinality, CreationPolicy, ICompositionElement): PrivateScope, Public, Static, HideBySig
+    CreateImportDefinition(Lazy`1, String, String, IEnumerable`1, ImportCardinality, CreationPolicy, IDictionary`2, Boolean, ICompositionElement): PrivateScope, Public, Static, HideBySig
+    TryMakeGenericPartDefinition(ComposablePartDefinition, IEnumerable`1, ComposablePartDefinition&(Out)): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionPartCreationInfo: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Lazy`1[System.Type], Boolean, System.Lazy`1[System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ImportDefinition]], System.Lazy`1[System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.Primitives.ExportDefinition]], System.Lazy`1[System.Collections.Generic.IDictionary`2[System.String,System.Object]], System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.ReflectionModel.IReflectionPartCreationInfo
+    System.ComponentModel.Composition.Primitives.ICompositionElement
+  Properties:
+    Boolean IsDisposalRequired 'get ' : 
+    Boolean IsIdentityComparison 'get ' : 
+    System.String DisplayName 'get ' : 
+    System.ComponentModel.Composition.Primitives.ICompositionElement Origin 'get ' : 
+  Methods:
+    GetPartType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetLazyPartType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetConstructor(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_IsDisposalRequired(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsIdentityComparison(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetMetadata(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetExports(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetImports(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_DisplayName(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Origin(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class System.ComponentModel.Composition.ReflectionModel.LazyExportDefinition: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ExportDefinition
+    Void .ctor(System.String, System.Lazy`1[System.Collections.Generic.IDictionary`2[System.String,System.Object]]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] Metadata 'get ' : 
+  Methods:
+    get_Metadata(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionItem: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+  Properties:
+    System.String Name 'get ' : 
+    System.Type ReturnType 'get ' : 
+    System.ComponentModel.Composition.ReflectionModel.ReflectionItemType ItemType 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetDisplayName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ReturnType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionMember: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+  :System.ComponentModel.Composition.ReflectionModel.ReflectionItem
+  Properties:
+    Boolean CanRead 'get ' : 
+    System.Type DeclaringType 'get ' : 
+    System.String Name 'get ' : 
+    Boolean RequiresInstance 'get ' : 
+    System.Reflection.MemberInfo UnderlyingMember 'get ' : 
+  Methods:
+    get_CanRead(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DeclaringType(): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetDisplayName(): PrivateScope, Public, Virtual, HideBySig
+    get_RequiresInstance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_UnderlyingMember(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetValue(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionWritableMember: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+  :System.ComponentModel.Composition.ReflectionModel.ReflectionMember
+  Properties:
+    Boolean CanWrite 'get ' : 
+  Methods:
+    get_CanWrite(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    SetValue(Object, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class System.ComponentModel.Composition.MetadataViewGenerator: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String MetadataViewType = MetadataViewType : Public, Static, Literal, HasDefault
+    System.String MetadataItemKey = MetadataItemKey : Public, Static, Literal, HasDefault
+    System.String MetadataItemTargetType = MetadataItemTargetType : Public, Static, Literal, HasDefault
+    System.String MetadataItemSourceType = MetadataItemSourceType : Public, Static, Literal, HasDefault
+    System.String MetadataItemValue = MetadataItemValue : Public, Static, Literal, HasDefault
+    System.String MetadataViewFactoryName = Create : Public, Static, Literal, HasDefault
+  Methods:
+    GetMetadataViewFactory(Type): PrivateScope, Public, Static, HideBySig
+    CreateMetadataView(MetadataViewFactory, IDictionary`2): PrivateScope, Public, Static, HideBySig
+Class System.ComponentModel.Composition.MetadataViewGenerator+MetadataViewFactory: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(IDictionary`2): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(IDictionary`2, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionField: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.ReflectionModel.ReflectionWritableMember
+    Void .ctor(System.Reflection.FieldInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Reflection.FieldInfo UndelyingField 'get ' : 
+    System.Reflection.MemberInfo UnderlyingMember 'get ' : 
+    Boolean CanRead 'get ' : 
+    Boolean CanWrite 'get ' : 
+    Boolean RequiresInstance 'get ' : 
+    System.Type ReturnType 'get ' : 
+    System.ComponentModel.Composition.ReflectionModel.ReflectionItemType ItemType 'get ' : 
+  Methods:
+    get_UndelyingField(): PrivateScope, Public, HideBySig, SpecialName
+    get_UnderlyingMember(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CanRead(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CanWrite(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RequiresInstance(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ReturnType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ItemType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetValue(Object): PrivateScope, Public, Virtual, HideBySig
+    SetValue(Object, Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionParameter: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.ReflectionModel.ReflectionItem
+    Void .ctor(System.Reflection.ParameterInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Reflection.ParameterInfo UnderlyingParameter 'get ' : 
+    System.String Name 'get ' : 
+    System.Type ReturnType 'get ' : 
+    System.ComponentModel.Composition.ReflectionModel.ReflectionItemType ItemType 'get ' : 
+  Methods:
+    get_UnderlyingParameter(): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetDisplayName(): PrivateScope, Public, Virtual, HideBySig
+    get_ReturnType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ItemType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionProperty: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.ReflectionModel.ReflectionWritableMember
+    Void .ctor(System.Reflection.MethodInfo, System.Reflection.MethodInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Reflection.MemberInfo UnderlyingMember 'get ' : 
+    Boolean CanRead 'get ' : 
+    Boolean CanWrite 'get ' : 
+    System.Reflection.MethodInfo UnderlyingGetMethod 'get ' : 
+    System.Reflection.MethodInfo UnderlyingSetMethod 'get ' : 
+    System.String Name 'get ' : 
+    Boolean RequiresInstance 'get ' : 
+    System.Type ReturnType 'get ' : 
+    System.ComponentModel.Composition.ReflectionModel.ReflectionItemType ItemType 'get ' : 
+  Methods:
+    get_UnderlyingMember(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CanRead(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CanWrite(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_UnderlyingGetMethod(): PrivateScope, Public, HideBySig, SpecialName
+    get_UnderlyingSetMethod(): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetDisplayName(): PrivateScope, Public, Virtual, HideBySig
+    get_RequiresInstance(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ReturnType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ItemType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetValue(Object): PrivateScope, Public, Virtual, HideBySig
+    SetValue(Object, Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionType: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.ReflectionModel.ReflectionMember
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Reflection.MemberInfo UnderlyingMember 'get ' : 
+    Boolean CanRead 'get ' : 
+    Boolean RequiresInstance 'get ' : 
+    System.Type ReturnType 'get ' : 
+    System.ComponentModel.Composition.ReflectionModel.ReflectionItemType ItemType 'get ' : 
+  Methods:
+    get_UnderlyingMember(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CanRead(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RequiresInstance(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ReturnType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ItemType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetValue(Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.ReflectionModel.ReflectionMethod: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.Composition.ReflectionModel.ReflectionMember
+    Void .ctor(System.Reflection.MethodInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Reflection.MethodInfo UnderlyingMethod 'get ' : 
+    System.Reflection.MemberInfo UnderlyingMember 'get ' : 
+    Boolean CanRead 'get ' : 
+    Boolean RequiresInstance 'get ' : 
+    System.Type ReturnType 'get ' : 
+    System.ComponentModel.Composition.ReflectionModel.ReflectionItemType ItemType 'get ' : 
+  Methods:
+    get_UnderlyingMethod(): PrivateScope, Public, HideBySig, SpecialName
+    get_UnderlyingMember(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CanRead(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RequiresInstance(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ReturnType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ItemType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetValue(Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.CompositionException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Exception
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.CompositionError): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.CompositionError]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception, System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.CompositionError]): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.ComponentModel.Composition.CompositionError] Errors 'get ' : 
+    System.String Message 'get ' : 
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.Exception] RootCauses 'get ' : 
+  Methods:
+    get_Errors(): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RootCauses(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.ChangeRejectedException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.ComponentModel.Composition.CompositionException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.CompositionError]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Message 'get ' : 
+  Methods:
+    get_Message(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Struct System.ComponentModel.Composition.CompositionErrorId: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ComponentModel.Composition.CompositionErrorId Unknown = 0 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId InvalidExportMetadata = 1 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ImportNotSetOnPart = 2 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ImportEngine_ComposeTookTooManyIterations = 3 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ImportEngine_ImportCardinalityMismatch = 4 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ImportEngine_PartCycle = 5 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ImportEngine_PartCannotSetImport = 6 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ImportEngine_PartCannotGetExportedValue = 7 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ImportEngine_PartCannotActivate = 8 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ImportEngine_PreventedByExistingImport = 9 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ImportEngine_InvalidStateForRecomposition = 10 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ReflectionModel_ImportThrewException = 11 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ReflectionModel_ImportNotAssignableFromExport = 12 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ReflectionModel_ImportCollectionNull = 13 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ReflectionModel_ImportCollectionNotWritable = 14 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ReflectionModel_ImportCollectionConstructionThrewException = 15 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ReflectionModel_ImportCollectionGetThrewException = 16 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ReflectionModel_ImportCollectionIsReadOnlyThrewException = 17 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ReflectionModel_ImportCollectionClearThrewException = 18 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ReflectionModel_ImportCollectionAddThrewException = 19 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CompositionErrorId ReflectionModel_ImportManyOnParameterCanOnlyBeAssigned = 20 : Public, Static, Literal, HasDefault
+Struct System.ComponentModel.Composition.CompositionResult: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(System.ComponentModel.Composition.CompositionError[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.CompositionError]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.ComponentModel.Composition.CompositionResult SucceededResult : Public, Static, InitOnly
+  Properties:
+    Boolean Succeeded 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.ComponentModel.Composition.CompositionError] Errors 'get ' : 
+  Methods:
+    get_Succeeded(): PrivateScope, Public, HideBySig, SpecialName
+    get_Errors(): PrivateScope, Public, HideBySig, SpecialName
+    MergeResult(CompositionResult): PrivateScope, Public, HideBySig
+    MergeError(CompositionError): PrivateScope, Public, HideBySig
+    MergeErrors(IEnumerable`1): PrivateScope, Public, HideBySig
+    ToResult(T): PrivateScope, Public, HideBySig
+    ThrowOnErrors(): PrivateScope, Public, HideBySig
+    ThrowOnErrors(AtomicComposition): PrivateScope, Public, HideBySig
+Class System.ComponentModel.Composition.ContractNameServices: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetTypeIdentity(Type): PrivateScope, Assembly, Static, HideBySig
+    GetTypeIdentity(Type, Boolean): PrivateScope, Assembly, Static, HideBySig
+    GetTypeIdentityFromMethod(MethodInfo): PrivateScope, Assembly, Static, HideBySig
+    GetTypeIdentityFromMethod(MethodInfo, Boolean): PrivateScope, Assembly, Static, HideBySig
+    WriteCustomModifiers(StringBuilder, String, Type[], Boolean): PrivateScope, Assembly, Static, HideBySig
+Struct System.ComponentModel.Composition.CreationPolicy: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ComponentModel.Composition.CreationPolicy Any = 0 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CreationPolicy Shared = 1 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.CreationPolicy NonShared = 2 : Public, Static, Literal, HasDefault
+Class System.ComponentModel.Composition.ExportMetadataAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get set' : 
+    System.Object Value 'get set' : 
+    Boolean IsMultiple 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsMultiple(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsMultiple(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.Composition.ImportAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.IAttributedImport
+  Properties:
+    System.String ContractName 'get set' : 
+    System.Type ContractType 'get set' : 
+    Boolean AllowDefault 'get set' : 
+    Boolean AllowRecomposition 'get set' : 
+    System.ComponentModel.Composition.CreationPolicy RequiredCreationPolicy 'get set' : 
+    System.ComponentModel.Composition.ImportSource Source 'get set' : 
+  Methods:
+    get_ContractName(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ContractType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AllowDefault(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowDefault(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowRecomposition(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AllowRecomposition(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_RequiredCreationPolicy(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_RequiredCreationPolicy(CreationPolicy): PrivateScope, Public, HideBySig, SpecialName
+    get_Source(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Source(ImportSource): PrivateScope, Public, HideBySig, SpecialName
+Struct System.ComponentModel.Composition.ImportSource: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ComponentModel.Composition.ImportSource Any = 0 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.ImportSource Local = 1 : Public, Static, Literal, HasDefault
+    System.ComponentModel.Composition.ImportSource NonLocal = 2 : Public, Static, Literal, HasDefault
+Class System.ComponentModel.Composition.MetadataAttributeAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.ComponentModel.Composition.Hosting.ApplicationCatalog: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ComposablePartCatalog
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Reflection.ReflectionContext): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Reflection.ReflectionContext, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Primitives.ICompositionElement
+  Methods:
+    CreateCatalog(String, String): PrivateScope, Assembly, HideBySig
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig
+    GetExports(ImportDefinition): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.Hosting.DirectoryCatalog: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ComposablePartCatalog
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Reflection.ReflectionContext): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Reflection.ReflectionContext, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.Reflection.ReflectionContext): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.Reflection.ReflectionContext, System.ComponentModel.Composition.Primitives.ICompositionElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged
+    System.ComponentModel.Composition.Primitives.ICompositionElement
+  Properties:
+    System.String FullPath 'get ' : 
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.String] LoadedFiles 'get ' : 
+    System.String Path 'get ' : 
+    System.String SearchPattern 'get ' : 
+  Events:
+    System.EventHandler`1[System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs] Changed: 
+    System.EventHandler`1[System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs] Changing: 
+  Methods:
+    get_FullPath(): PrivateScope, Public, HideBySig, SpecialName
+    get_LoadedFiles(): PrivateScope, Public, HideBySig, SpecialName
+    get_Path(): PrivateScope, Public, HideBySig, SpecialName
+    get_SearchPattern(): PrivateScope, Public, HideBySig, SpecialName
+    add_Changed(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_Changed(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    add_Changing(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_Changing(EventHandler`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig
+    GetExports(ImportDefinition): PrivateScope, Public, Virtual, HideBySig
+    Refresh(): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.Composition.Hosting.DirectoryCatalog+DirectoryCatalogDebuggerProxy: AutoLayout, AnsiClass, Class, NestedAssembly, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Composition.Hosting.DirectoryCatalog): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.Reflection.Assembly] Assemblies 'get ' : 
+    System.Reflection.ReflectionContext ReflectionContext 'get ' : 
+    System.String SearchPattern 'get ' : 
+    System.String Path 'get ' : 
+    System.String FullPath 'get ' : 
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.String] LoadedFiles 'get ' : 
+    System.Collections.ObjectModel.ReadOnlyCollection`1[System.ComponentModel.Composition.Primitives.ComposablePartDefinition] Parts 'get ' : 
+  Methods:
+    get_Assemblies(): PrivateScope, Public, HideBySig, SpecialName
+    get_ReflectionContext(): PrivateScope, Public, HideBySig, SpecialName
+    get_SearchPattern(): PrivateScope, Public, HideBySig, SpecialName
+    get_Path(): PrivateScope, Public, HideBySig, SpecialName
+    get_FullPath(): PrivateScope, Public, HideBySig, SpecialName
+    get_LoadedFiles(): PrivateScope, Public, HideBySig, SpecialName
+    get_Parts(): PrivateScope, Public, HideBySig, SpecialName

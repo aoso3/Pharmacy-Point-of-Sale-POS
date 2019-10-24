@@ -1,0 +1,70 @@
+  PHRMA.Add_Medicine1.resources - Embedded, ContainedInManifestFile, 
+  PHRMA.Add_Replacement2.resources - Embedded, ContainedInManifestFile, 
+  PHRMA.Main.resources - Embedded, ContainedInManifestFile, 
+  PHRMA.View.resources - Embedded, ContainedInManifestFile, 
+  PHRMA.View_2.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly PHRMA, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.ComponentModel.Composition, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Telerik.WinControls, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e: 
+	hash=None, flags=None
+Assembly Telerik.WinControls.GridView, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e: 
+	hash=None, flags=None
+Assembly Telerik.WinControls.RichTextBox, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e: 
+	hash=None, flags=None
+Assembly Telerik.WinControls.Themes.Aqua, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e: 
+	hash=None, flags=None
+Assembly Telerik.WinControls.Themes.Breeze, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e: 
+	hash=None, flags=None
+Assembly Telerik.WinControls.Themes.Office2013Light, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e: 
+	hash=None, flags=None
+Assembly Telerik.WinControls.Themes.TelerikMetroBlue, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e: 
+	hash=None, flags=None
+Assembly Telerik.WinControls.Themes.VisualStudio2012Light, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e: 
+	hash=None, flags=None
+Assembly Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e: 
+	hash=None, flags=None
+Assembly TelerikCommon, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e: 
+	hash=None, flags=None
+Class PHRMA.View_2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(Pharamacy*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Pharamacy* pha : Public
+Class PHRMA.View: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(Pharamacy*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Pharamacy* pha : Public
+Class PHRMA.Add_Replacement1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(Pharamacy*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class PHRMA.Add_Medicine: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(Pharamacy*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Pharamacy* pha : Public
+Class PHRMA.Main: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Pharamacy* pha : Public
+    Int32 bobo : Public
+  Methods:
+    convert1(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, String): PrivateScope, Public, HideBySig
